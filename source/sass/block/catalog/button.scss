@@ -1,0 +1,10 @@
+.button {
+  @include clear-link;
+  font-family: $header-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $alt-text;
+  background-color: $main-color;
+}

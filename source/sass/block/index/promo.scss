@@ -1,0 +1,29 @@
+.promo {
+  background: $main-background url("/img/index-background-mobile@1x.jpg") no-repeat top;
+}
+
+.promo__header {
+  @include clear-indents;
+  width: 250px;
+  padding: 26px 0 19px 0;
+  margin: 0 auto;
+  font-family: $header-font;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $alt-text;
+}
+
+.promo__desc {
+  @include clear-indents;
+  padding-bottom: 29px;
+  font-family: $header-font;
+  line-height: 14px;
+  text-align: center;
+  color: $alt-text;
+}
+
+.promo__image {
+  display: block;
+  margin: 0 auto;
+}

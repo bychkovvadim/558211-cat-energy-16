@@ -1,0 +1,17 @@
+.select-link__link {
+  @include clear-link;
+  font-family: $header-font;
+  color: $alt-text;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $main-color;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-btn;
+  }
+
+  &:active {
+    color: rgba($alt-text, 0.3);
+  }
+}

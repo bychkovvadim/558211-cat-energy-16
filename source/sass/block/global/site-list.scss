@@ -1,0 +1,36 @@
+.site-list {
+  @include clear-list;
+}
+
+.site-list__item {
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid $border-color;
+
+  &:first-child {
+    border-top: 1px solid $border-color;
+  }
+}
+
+.site-list__link {
+  @include clear-link;
+  font-family: $header-font;
+  font-size: 20px;
+  line-height: 20px;
+  color: $header-text;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active {
+    text-decoration: underline;
+    text-decoration-color: $main-color;
+  }
+}

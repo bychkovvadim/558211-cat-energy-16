@@ -1,0 +1,14 @@
+.social__item {
+  display: inline-flex;
+  margin: 0 18px;
+}
+
+.social__image {
+  &:hover {
+    fill: $main-color;
+  }
+
+  &:active {
+    fill: rgba($main-color, 0.3);
+  }
+}
