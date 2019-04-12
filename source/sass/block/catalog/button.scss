@@ -1,5 +1,8 @@
 .button {
   @include clear-link;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
   font-family: $header-font;
   font-size: 16px;
   line-height: 20px;
@@ -7,4 +10,28 @@
   text-transform: uppercase;
   color: $alt-text;
   background-color: $main-color;
+
+  &--gray {
+    background-color: $alt-background;
+    color: $desc-text;
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $hover-btn;
+  }
+
+  &:active {
+    color: rgba($alt-text, 0.3);
+  }
+
+  &--gray:hover,
+  &--gray:focus {
+    background-color: $alt-hover-btn;
+  }
+
+  &--gray:active {
+    color: rgba($desc-text, 0.3);
+  }
 }

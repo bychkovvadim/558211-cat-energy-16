@@ -1,0 +1,33 @@
+.desc-product__header {
+  @include clear-indents;
+  width: 60%;
+  margin-bottom: 15px;
+  font-family: $header-font;
+  color: $header-text;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &:active {
+    color: rgba($header-text, 0.3);
+  }
+}
+
+.desc-product__link {
+  @include clear-link;
+}
+
+.desc-product__specification {
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.desc-product__cell {
+  float: left;
+
+  &--right {
+    float: right;
+  }
+}

@@ -1,0 +1,22 @@
+.selection {
+  display: flex;
+  border: none;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.selection__label {
+  padding-left: 50px;
+  margin-bottom: 25px;
+  font-family: $header-font;
+  color: $header-text;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

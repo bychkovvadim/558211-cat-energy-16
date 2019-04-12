@@ -15,5 +15,40 @@
 }
 
 .manual__item {
+  position: relative;
   margin-bottom: 20px;
+
+  &::before {
+    position: absolute;
+    left: -100px;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $main-color;
+  }
+
+  &::after {
+    position: absolute;
+    top: 5px;
+    left: -95px;
+    content: "";
+    width: 60px;
+    height: 60px;
+  }
+
+  &--list-ico::after {
+    background: url("/img/advantage-leaf@1x.png") no-repeat;
+  }
+
+  &--powder-ico::after {
+    background: url("/img/advantage-powder@1x.png") no-repeat;
+  }
+
+  &--cutlery-ico::after {
+    background: url("/img/advantage-dining@1x.png") no-repeat;
+  }
+
+  &--clock-ico::after {
+    background: url("/img/advantage-clock@1x.png") no-repeat;
+  }
 }

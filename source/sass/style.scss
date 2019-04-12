@@ -12,6 +12,7 @@
 /* Общие блоки */
 
 @import "block/global/page-header.scss";
+@import "block/global/navigation.scss";
 @import "block/global/nav-toggle.scss";
 @import "block/global/site-list.scss";
 @import "block/global/page-main.scss";
@@ -34,7 +35,18 @@
 /* catalog.html page style */
 
 @import "block/catalog/catalog.scss";
+@import "block/catalog/product-card.scss";
+@import "block/catalog/desc-product.scss";
 @import "block/catalog/other-product.scss";
+@import "block/catalog/more-product.scss";
+@import "block/catalog/bonus.scss";
 @import "block/catalog/button.scss";
 
 /* form.html page style */
+
+@import "block/form/form.scss";
+@import "block/form/form-info.scss";
+@import "block/form/selection.scss";
+@import "block/form/contact.scss";
+@import "block/form/comment.scss";
+@import "block/form/add.scss";

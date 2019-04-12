@@ -4,6 +4,8 @@
 }
 
 .page-header__logo {
+  @include clear_indents;
+
   &:hover,
   &:focus {
     opacity: 0.8;

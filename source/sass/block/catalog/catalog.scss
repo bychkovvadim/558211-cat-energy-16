@@ -1,3 +1,25 @@
 .catalog__list {
   @include clear-list;
+  width: 320px;
+}
+
+.catalog__item {
+  padding: 0 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $border-color;
+}
+
+.catalog__head {
+  @include clear-indents;
+  padding: 21px 20px 22px;
+  font-family: $header-font;
+  color: $header-text;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  border-bottom: 1px solid $border-color;
+}
+
+.catalog__more-wrap {
+  padding: 25px 20px;
 }

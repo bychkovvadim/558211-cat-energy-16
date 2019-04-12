@@ -1,0 +1,29 @@
+.add {
+  display: flex;
+  font-family: $header-font;
+  color: $header-text;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  border: none;
+}
+
+.add__legend {
+  margin-bottom: 32px;
+}
+
+.add__label {
+  padding-left: 50px;
+  margin-bottom: 27px;
+  font-family: $header-font;
+  color: $header-text;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

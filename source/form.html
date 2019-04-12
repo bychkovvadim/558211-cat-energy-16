@@ -31,7 +31,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="form">
+      <section class="page-main__form form">
         <h2 class="form__header">Подбор программы</h2>
         <p class="form__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form action="https://echo.htmlacademy.ru" method="GET">
@@ -47,16 +47,16 @@
               <input class="form-info__input" type="number" name="age" id="age" placeholder="7">
             </label>
           </fieldset>
-          <fieldset class="form__selection section">
+          <fieldset class="form__selection selection">
             <legend class="visually-hidden">Выбор программы</legend>
-            <label class="section__label">
-              <input class="section__input" type="radio" name="section" id="slim" value="slim" checked>Похудение
+            <label class="selection__label">
+              <input class="visually-hidden selection__input" type="radio" name="selection" id="slim" value="slim" checked>Похудение
             </label>
-            <label class="section__label">
-              <input class="section__input" type="radio" name="section" id="power" value="power">Набор массы
+            <label class="selection__label">
+              <input class="visually-hidden selection__input" type="radio" name="selection" id="power" value="power">Набор массы
             </label>
-            <label class="section__label">
-              <input class="section__input" type="radio" name="section" id="consultation" value="consultation">Не знаю (нужен ваш совет)
+            <label class="selection__label">
+              <input class="visually-hidden selection__input" type="radio" name="selection" id="consultation" value="consultation">Не знаю (нужен ваш совет)
             </label>
           </fieldset>
           <fieldset class="form__contact contact">
@@ -75,20 +75,20 @@
           <fieldset class="form__add add">
             <legend class="add__legend">Дополнительно</legend>
             <label class="add__label">
-              <input class="add__input" type="checkbox" name="sweetener" id="sweetener" checked>Сахарозаменитель
+              <input class="visually-hidden add__input" type="checkbox" name="sweetener" id="sweetener" checked>Сахарозаменитель
             </label>
             <label class="add__label">
-              <input class="add__input" type="checkbox" name="wather" id="wather">Питьевая вода
+              <input class="visually-hidden add__input" type="checkbox" name="wather" id="wather">Питьевая вода
             </label>
             <label class="add__label">
-              <input class="add__input" type="checkbox" name="milk" id="milk">Молоко
+              <input class="visually-hidden add__input" type="checkbox" name="milk" id="milk">Молоко
             </label>
             <label class="add__label">
-              <input class="add__input" type="checkbox" name="vitamins" id="vitamins">Витамины
+              <input class="visually-hidden add__input" type="checkbox" name="vitamins" id="vitamins">Витамины
             </label>
           </fieldset>
-          <p class="form__legend">* — Обязательные поля</p>
           <button class="form__btn" type="submit">Отправить заявку</button>
+          <p class="form__legend">* — Обязательные поля</p>
         </form>
       </section>
     </main>

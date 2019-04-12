@@ -8,6 +8,10 @@
   display: inline-flex;
   justify-content: space-between;
   padding: 20px 28px;
+
+  &--index-page {
+    background-color: $main-background;
+  }
 }
 
 .page-footer__logo {

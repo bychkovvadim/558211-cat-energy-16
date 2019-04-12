@@ -1,0 +1,33 @@
+.more-product {
+  position: relative;
+  border-bottom: 1px solid $border-color;
+
+  &::before {
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    top: 15%;
+    right: 45%;
+    content: "";
+    background: url("/img/icon-plus-mobile.svg") no-repeat 0 50%;
+    opacity: 0.2;
+  }
+}
+
+.more-product__show {
+  padding-top: 60px;
+  font-family: $header-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $header-text;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.more-product__info {
+  @include clear-indents;
+  padding-bottom: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
