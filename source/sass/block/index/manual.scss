@@ -8,6 +8,8 @@
   @include clear-indents;
   margin: 35px 15px;
   font-family: $header-font;
+  color: $header-text;
+  font-weight: 400;
   font-size: 36px;
   line-height: 60px;
 }

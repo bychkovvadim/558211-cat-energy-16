@@ -6,7 +6,9 @@
   @include clear-indents;
   margin: 33px 20px;
   font-family: $header-font;
+  font-weight: 400;
   font-size: 36px;
+  color: $header-text;
   line-height: 60px;
 }
 

@@ -1,5 +1,7 @@
 .progress__btn {
   @include clear-btn;
   font-family: $header-font;
+  color: $header-text;
+  font-weight: 400;
   text-transform: uppercase;
 }
