@@ -1,0 +1,33 @@
+.contact {
+  font-family: $header-font;
+  color: $header-text;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  border: none;
+}
+
+.contact__legend {
+  margin-bottom: 30px;
+}
+
+.contact__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  font-family: $header-font;
+  color: $header-text;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contact__input {
+  flex-grow: 1;
+  margin-left: 14px;
+  padding-left: 16px;
+  text-transform: uppercase;
+}

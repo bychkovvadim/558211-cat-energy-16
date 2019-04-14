@@ -1,0 +1,25 @@
+.bonus {
+  background: $main-color url("/img/gift-photo-mobile@1x.jpg") no-repeat center;
+}
+
+.bonus__desc {
+  position: relative;
+  width: 159px;
+  margin: 0 auto;
+  padding-top: 180px;
+  padding-bottom: 43px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $alt-text;
+
+  &::before {
+    position: absolute;
+    top: 20%;
+    right: 32%;
+    content: "";
+    width: 56px;
+    height: 61px;
+    background: url("/img/icon-gift.svg") no-repeat center;
+  }
+}

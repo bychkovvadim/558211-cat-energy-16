@@ -1,0 +1,13 @@
+.collaboration__description {
+  @include clear-indents;
+  font-family: $header-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $header-text;
+  text-transform: uppercase;
+}
+
+.collaboration__address {
+  line-height: 20px;
+  font-style: normal;
+}

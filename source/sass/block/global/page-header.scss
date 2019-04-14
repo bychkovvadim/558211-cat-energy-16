@@ -1,0 +1,32 @@
+.page-header {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  @include clear_indents;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--index-logo {
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+}
+
+.page-header__logo-image {
+  margin: 11px 15px 20px;
+}

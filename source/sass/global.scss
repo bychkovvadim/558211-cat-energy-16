@@ -1,0 +1,18 @@
+body {
+  @include clear-indents;
+  min-width: 320px;
+  font-family: $desc-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  font-style: normal;
+  vertical-align: baseline;
+  color: $desc-text;
+  background-color: $main-background;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

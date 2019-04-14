@@ -1,0 +1,81 @@
+.program {
+  background-color: $alt-background;
+}
+
+.program__header {
+  @include clear-indents;
+  position: relative;
+  padding: 29px 20px 29px 0;
+  padding-left: 92px;
+  font-family: $header-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  color: $header-text;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    top: 23%;
+    left: 8%;
+    content: "";
+    width: 50px;
+    height: 51px;
+    border-radius: 50%;
+    background-color: $main-color;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+  }
+
+  &--slim-cat::after {
+    top: 23%;
+    left: 11%;
+    width: 35px;
+    height: 49px;
+    background: url("/img/icon-cat-slim.svg") no-repeat;
+  }
+
+  &--power-cat::after {
+    top: 37%;
+    left: 5%;
+    width: 67px;
+    height: 28px;
+    background: url("/img/icon-cat-pro.svg") no-repeat;
+  }
+}
+
+.program__desc {
+  @include clear-indents;
+  margin: 0 21px 42px;
+}
+
+.program__link {
+  @include clear-link;
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 22px;
+  font-family: $header-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $header-text;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    top: 20%;
+    left: 95%;
+    margin-left: 15px;
+    width: 25px;
+    height: 12px;
+    content: "";
+    background: url("/img/icon-right-arrow-long.svg") no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

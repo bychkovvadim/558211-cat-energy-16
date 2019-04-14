@@ -1,1 +1,52 @@
+/* Общие файлы стилей */
 
+@import "normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+@import "visually-hidden.scss";
+@import "global.scss";
+
+/* Стили блоков */
+
+/* Общие блоки */
+
+@import "block/global/page-header.scss";
+@import "block/global/navigation.scss";
+@import "block/global/nav-toggle.scss";
+@import "block/global/site-list.scss";
+@import "block/global/page-main.scss";
+@import "block/global/page-footer.scss";
+@import "block/global/colaboration.scss";
+@import "block/global/map.scss";
+@import "block/global/social.scss";
+@import "block/global/copyright.scss";
+
+/* index.html page style */
+
+@import "block/index/promo.scss";
+@import "block/index/select-link.scss";
+@import "block/index/programs.scss";
+@import "block/index/program.scss";
+@import "block/index/manual.scss";
+@import "block/index/example.scss";
+@import "block/index/progress.scss";
+
+/* catalog.html page style */
+
+@import "block/catalog/catalog.scss";
+@import "block/catalog/product-card.scss";
+@import "block/catalog/desc-product.scss";
+@import "block/catalog/other-product.scss";
+@import "block/catalog/more-product.scss";
+@import "block/catalog/bonus.scss";
+@import "block/catalog/button.scss";
+
+/* form.html page style */
+
+@import "block/form/form.scss";
+@import "block/form/form-info.scss";
+@import "block/form/selection.scss";
+@import "block/form/contact.scss";
+@import "block/form/comment.scss";
+@import "block/form/add.scss";

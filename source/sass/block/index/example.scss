@@ -1,0 +1,23 @@
+.example {
+  background-color: $alt-background;
+}
+
+.example__header {
+  @include clear-indents;
+  margin: 33px 20px;
+  font-family: $header-font;
+  font-weight: 400;
+  font-size: 36px;
+  color: $header-text;
+  line-height: 60px;
+}
+
+.example__desc {
+  @include clear-indents;
+  margin: 0 20px;
+}
+
+.example__story {
+  margin: 20px;
+  margin-bottom: 40px;
+}

@@ -1,0 +1,15 @@
+.copyright__desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.copyright__logo-dev {
+  &:hover {
+    fill: $main-color;
+  }
+
+  &:active {
+    fill: rgba($main-color, 0.3);
+  }
+}

@@ -1,0 +1,20 @@
+.select-link__link {
+  @include clear-link;
+  width: 100%;
+  display: inline-block;
+  padding: 14px 0;
+  font-family: $header-font;
+  color: $alt-text;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $main-color;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-btn;
+  }
+
+  &:active {
+    color: rgba($alt-text, 0.3);
+  }
+}
