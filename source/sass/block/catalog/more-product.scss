@@ -6,8 +6,9 @@
     width: 31px;
     height: 31px;
     position: absolute;
-    top: 15%;
-    right: 45%;
+    top: 12.7%;
+    left: 50%;
+    transform: translate(-50%);
     content: "";
     background: url("/img/icon-plus-mobile.svg") no-repeat 0 50%;
     opacity: 0.2;
@@ -30,4 +31,32 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .more-product__show {
+    padding-top: 166px;
+  }
+
+  .more-product__info {
+    padding-top: 25px;
+    padding-bottom: 52px;
+  }
+
+  .more-product__wrapper {
+    margin: 16%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more-product {
+    outline: 1px solid $border-color;
+    box-sizing: border-box;
+
+    &::before {
+      width: 61px;
+      height: 61px;
+      background: url("/img/icon-plus.svg") no-repeat;
+    }
+  }
 }

@@ -1,3 +1,19 @@
 .programs__item {
+  display: flex;
+  flex-direction: column;
   margin: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__item {
+    width: 708px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__item {
+    width: 570px;
+  }
 }

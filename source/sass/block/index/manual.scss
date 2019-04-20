@@ -1,12 +1,14 @@
 .manual__list {
   @include clear-list;
+  display: flex;
+  flex-direction: column;
   margin: 20px 25px 42px 20px;
   padding-left: 80px;
 }
 
 .manual__header {
   @include clear-indents;
-  margin: 35px 15px;
+  margin: 40px 20px;
   font-family: $header-font;
   color: $header-text;
   font-weight: 400;
@@ -16,11 +18,11 @@
 
 .manual__item {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 
   &::before {
     position: absolute;
-    left: -100px;
+    left: -80px;
     content: "";
     width: 60px;
     height: 60px;
@@ -29,8 +31,8 @@
 
   &::after {
     position: absolute;
-    top: 5px;
-    left: -95px;
+    top: 3px;
+    left: -75px;
     content: "";
     width: 60px;
     height: 60px;
@@ -50,5 +52,29 @@
 
   &--clock-ico::after {
     background: url("/img/advantage-clock@1x.png") no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .manual__list {
+    @include clear-list;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .manual__item {
+    width: 250px;
+    margin-right: 50px;
+
+    &::before {
+      top: -125%;
+      left: 0;
+    }
+  }
+
+  .manual__header {
+    @include clear-indents;
+    margin-bottom: 90px;
   }
 }

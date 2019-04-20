@@ -1,11 +1,19 @@
 .add {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   font-family: $header-font;
   color: $header-text;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   border: none;
+}
+
+.add__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .add__legend {
@@ -25,5 +33,28 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .add__wrapper {
+    flex-direction: row;
+  }
+
+  .add__legend {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .add__label {
+    width: 40%;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .add__label {
+    width: 20%;
   }
 }

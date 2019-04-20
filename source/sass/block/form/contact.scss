@@ -31,3 +31,15 @@
   padding-left: 16px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .contact__legend {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .contact__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
