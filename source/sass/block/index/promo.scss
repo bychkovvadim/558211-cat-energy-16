@@ -8,6 +8,7 @@
 
 .promo__header {
   @include clear-indents;
+  width: $mobile-width;
   padding: 26px 0 19px 0;
   margin: 0 auto;
   font-family: $header-font;

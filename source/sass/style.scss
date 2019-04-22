@@ -5,7 +5,7 @@
 @import "mixins.scss";
 @import "fonts.scss";
 @import "visually-hidden.scss";
-@import "global.scss";
+@import "scaffolding.scss";
 
 /* Стили блоков */
 
@@ -38,6 +38,7 @@
 @import "block/catalog/product-card.scss";
 @import "block/catalog/desc-product.scss";
 @import "block/catalog/other-product.scss";
+@import "block/catalog/other-product-card.scss";
 @import "block/catalog/more-product.scss";
 @import "block/catalog/bonus.scss";
 @import "block/catalog/button.scss";

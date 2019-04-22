@@ -67,15 +67,10 @@
   &::after {
     position: absolute;
     top: 20%;
-    left: 95%;
     margin-left: 15px;
     width: 25px;
     height: 12px;
     content: "";
     background: url("/img/icon-right-arrow-long.svg") no-repeat;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
