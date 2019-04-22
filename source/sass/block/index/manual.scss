@@ -63,15 +63,15 @@
     margin-bottom: 200px;
 
     &::after {
-     position: absolute;
-     width: 100%;
-     top: 52%;
-     left: 60%;
-     content: "";
-     z-index: -1;
-     color: $alt-background;
-     font-family: $header-font;
-     font-size: 272px;
+      position: absolute;
+      width: 100%;
+      top: 52%;
+      left: 60%;
+      content: "";
+      z-index: -1;
+      color: $alt-background;
+      font-family: $header-font;
+      font-size: 272px;
     }
 
     &--leaf::after {
