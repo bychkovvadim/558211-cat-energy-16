@@ -51,6 +51,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    counter-reset: list;
   }
 
   .manual__item {
@@ -58,36 +59,23 @@
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    width: 250px;
-    margin-right: 50px;
+    max-width: 250px;
+    margin-right: 73px;
     margin-bottom: 200px;
+    font-size: 16px;
+    line-height: 24px;
 
     &::after {
       position: absolute;
-      width: 100%;
-      top: 52%;
-      left: 60%;
-      content: "";
+      top: -25%;
+      right: 0;
+      counter-increment: list;
+      content: "" counter(list);
       z-index: -1;
+      font-size: 272px;
+      line-height: 1;
       color: $alt-background;
       font-family: $header-font;
-      font-size: 272px;
-    }
-
-    &--leaf::after {
-      content: "1";
-    }
-
-    &--powder::after {
-      content: "2";
-    }
-
-    &--dining::after {
-      content: "3";
-    }
-
-    &--clock::after {
-      content: "4";
     }
   }
 
@@ -100,5 +88,15 @@
   .manual__header {
     @include clear-indents;
     margin-bottom: 90px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .manual__item {
+    &:nth-child(4n+4) {
+      margin-right: 0;
+    }
   }
 }

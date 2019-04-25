@@ -22,9 +22,14 @@
   color: $header-text;
   text-transform: uppercase;
 
+  &--active {
+    border-bottom: 2px solid $main-color;
+  }
+
   &:hover,
   &:focus {
     opacity: 0.6;
+    transition: 0.2s;
   }
 
   &:active {
@@ -55,12 +60,16 @@
 
 @media (min-width: $desktop-width) {
   .site-list__link {
-    color: $alt-text;
+    color: $header-text;
     font-size: 20px;
     line-height: 25px;
 
     &--color-toggle {
-      color: $header-text;
+      color: $alt-text;
     }
+  }
+
+  .site-list__link--active.site-list__link--color-toggle {
+    border-bottom: 2px solid #ffffff;
   }
 }

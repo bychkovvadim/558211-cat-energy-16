@@ -4,11 +4,49 @@
 }
 
 .social__image {
-  &:hover {
+  fill: #666666;
+
+  &--vk {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--ig {
+    width: 17px;
+    height: 17px;
+  }
+
+  &--fb {
+    width: 10px;
+    height: 19px;
+  }
+
+  &:hover,
+  &:focus {
     fill: $main-color;
+    transition: 0.2s;
   }
 
   &:active {
-    fill: rgba($main-color, 0.3);
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+.social__image {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--ig {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
   }
 }

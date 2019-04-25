@@ -47,9 +47,10 @@
   }
 
   .page-main__promo {
+    align-items: flex-start;
     margin-right: 20%;
     margin-left: 5%;
-    margin-bottom: 200px;
+    margin-bottom: 529px;
   }
 
   .page-main__programs {
@@ -71,6 +72,13 @@
   }
 
   .page-main__programs {
+    @include clear-indents;
+    width: 84.723%;
+    justify-content: space-between;
     flex-direction: row;
+  }
+
+  .page-main__manual {
+    width: 84.723%;
   }
 }

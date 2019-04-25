@@ -1,13 +1,17 @@
 .product-card {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+}
+
+.product-card__link {
+  flex-grow: 0;
+  align-self: center;
 }
 
 .product-card__image {
-  width: 140px;
-  height: 144px;
-  align-self: center;
-  flex-grow: 0;
+  width: 100%;
+  height: auto;
 }
 
 .product-card__desc {

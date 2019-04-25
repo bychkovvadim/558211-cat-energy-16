@@ -26,6 +26,7 @@
   font-weight: 400;
   line-height: 14px;
   text-align: center;
+  text-transform: uppercase;
   color: $alt-text;
 }
 
@@ -45,8 +46,10 @@
 
   .promo__image {
     position: absolute;
-    top: 10%;
-    left: 45%;
+    left: 50%;
+    width: 709px;
+    height: 609px;
+    transform: translate(-50%, 0);
     z-index: -1;
   }
 
@@ -77,8 +80,10 @@
 
 @media (min-width: $desktop-width) {
   .promo__image {
-    top: 5%;
-    left: 44%;
+    top: 0;
+    left: 60%;
+    width: 552px;
+    height: 499px;
     z-index: 0;
   }
 
