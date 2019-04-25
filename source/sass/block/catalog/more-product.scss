@@ -10,7 +10,7 @@
     left: 50%;
     transform: translate(-50%);
     content: "";
-    background: url("/img/icon-plus-mobile.svg") no-repeat 0 50%;
+    background: url("../img/icon-plus-mobile.svg") no-repeat 0 50%;
     opacity: 0.2;
   }
 }
@@ -56,7 +56,7 @@
     &::before {
       width: 61px;
       height: 61px;
-      background: url("/img/icon-plus.svg") no-repeat;
+      background: url("../img/icon-plus.svg") no-repeat;
     }
   }
 }

@@ -68,7 +68,7 @@
   &:focus .program__arrow {
     width: 34px;
     transition: 0.3s;
-    background: url("/img/icon-right-arrow-verylong.svg") no-repeat;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
   }
 }
 
@@ -79,7 +79,7 @@
   width: 25px;
   height: 12px;
   content: "";
-  background: url("/img/icon-right-arrow-long.svg") no-repeat;
+  background: url("../img/icon-right-arrow-long.svg") no-repeat;
 }
 
 @media (min-width: $tablet-width) {

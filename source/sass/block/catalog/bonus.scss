@@ -1,5 +1,5 @@
 .bonus {
-  background: $main-color url("/img/gift-photo-mobile@1x.jpg") no-repeat center;
+  background: $main-color url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
 }
 
 .bonus__desc {
@@ -20,7 +20,7 @@
     content: "";
     width: 56px;
     height: 61px;
-    background: url("/img/icon-gift.svg") no-repeat center;
+    background: url("../img/icon-gift.svg") no-repeat center;
   }
 }
 
