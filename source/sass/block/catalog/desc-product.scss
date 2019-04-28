@@ -31,3 +31,28 @@
     float: right;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .desc-product__header {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .desc-product__specification {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 19.9%;
+  }
+
+  .desc-product__line {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .desc-product__cell {
+    padding: 5px 0;
+  }
+}

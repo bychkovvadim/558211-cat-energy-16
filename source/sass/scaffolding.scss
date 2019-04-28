@@ -1,6 +1,8 @@
 body {
   @include clear-indents;
   min-width: 320px;
+  max-width: $desktop-width;
+  margin: 0 auto;
   font-family: $desc-font;
   font-size: 14px;
   font-weight: 400;
@@ -10,6 +12,7 @@ body {
   vertical-align: baseline;
   color: $desc-text;
   background-color: $main-background;
+  box-sizing: border-box;
 }
 
 img {

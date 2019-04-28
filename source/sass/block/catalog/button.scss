@@ -20,6 +20,7 @@
   &:hover,
   &:focus {
     background-color: $hover-btn;
+    transition: 0.2s;
   }
 
   &:active {
@@ -29,6 +30,7 @@
   &--gray:hover,
   &--gray:focus {
     background-color: $alt-hover-btn;
+    transition: 0.2s;
   }
 
   &--gray:active {

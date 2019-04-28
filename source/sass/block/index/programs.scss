@@ -1,3 +1,17 @@
 .programs__item {
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__item {
+    width: 708px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__item {
+    width: 570px;
+  }
 }

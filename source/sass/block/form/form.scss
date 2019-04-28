@@ -1,3 +1,8 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__header {
   @include clear-indents;
   margin-bottom: 35px;
@@ -69,6 +74,51 @@
 
 .form__legend {
   @include clear-indents;
+  width: 100%;
   margin-bottom: 34px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: $tablet-width;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__header {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form__desc {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 50%;
+    margin-left: 5%;
+  }
+
+  .form__wrapper {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: $desktop-width;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .form__column {
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -5,11 +5,22 @@
 }
 
 .copyright__logo-dev {
+  width: 27px;
+  height: 34px;
+  fill: #666666;
+
   &:hover {
     fill: $main-color;
+    transition: 0.2s;
   }
 
   &:active {
-    fill: rgba($main-color, 0.3);
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__desc {
+    margin-right: 23px;
   }
 }

@@ -1,12 +1,12 @@
 .bonus {
-  background: $main-color url("/img/gift-photo-mobile@1x.jpg") no-repeat center;
+  background: $main-color url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
 }
 
 .bonus__desc {
   position: relative;
   width: 159px;
   margin: 0 auto;
-  padding-top: 180px;
+  padding-top: 186px;
   padding-bottom: 43px;
   font-size: 16px;
   line-height: 20px;
@@ -20,6 +20,18 @@
     content: "";
     width: 56px;
     height: 61px;
-    background: url("/img/icon-gift.svg") no-repeat center;
+    background: url("../img/icon-gift.svg") no-repeat center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .bonus {
+    @include clear-indents;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bonus {
+    @include clear-indents;
   }
 }

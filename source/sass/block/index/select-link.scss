@@ -1,7 +1,11 @@
+.select-link {
+  @include clear-indents;
+}
+
 .select-link__link {
   @include clear-link;
-  width: 100%;
   display: inline-block;
+  width: 245px;
   padding: 14px 0;
   font-family: $header-font;
   color: $alt-text;
@@ -12,6 +16,7 @@
   &:hover,
   &:focus {
     background-color: $hover-btn;
+    transition: 0.2s;
   }
 
   &:active {

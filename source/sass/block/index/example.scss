@@ -21,3 +21,25 @@
   margin: 20px;
   margin-bottom: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .example {
+    background: linear-gradient(to top, $alt-background 50%, $main-background 50%);
+  }
+
+  .example__header {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    background: linear-gradient(to top, $alt-background 50%, $main-background 50%);
+  }
+}

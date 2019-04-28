@@ -1,9 +1,37 @@
 .product-card {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.product-card__link {
+  flex-grow: 0;
+  align-self: center;
+}
+
+.product-card__image {
+  width: 100%;
+  height: auto;
 }
 
 .product-card__desc {
   width: 50%;
   padding: 24px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .product-card {
+    flex-wrap: wrap;
+    background: linear-gradient(to top, #f2f2f2 85%, #ffffff 15%);
+  }
+
+  .product-card__desc {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card__desc {
+    margin: 0 16%;
+  }
 }

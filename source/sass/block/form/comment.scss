@@ -18,6 +18,18 @@
   font-family: $header-font;
   font-size: 16px;
   line-height: 18px;
-  text-align: center;
   text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .comment__legend {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .comment__textarea {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

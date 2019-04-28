@@ -1,5 +1,7 @@
 .site-list {
   @include clear-list;
+  display: flex;
+  flex-direction: column;
 }
 
 .site-list__item {
@@ -20,17 +22,54 @@
   color: $header-text;
   text-transform: uppercase;
 
+  &--active {
+    border-bottom: 2px solid $main-color;
+  }
+
   &:hover,
   &:focus {
     opacity: 0.6;
+    transition: 0.2s;
   }
 
   &:active {
     opacity: 0.3;
   }
+}
 
-  &--active {
-    text-decoration: underline;
-    text-decoration-color: $main-color;
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+  }
+
+  .site-list__item {
+    padding: 0;
+    margin: 0 10px;
+    border: none;
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  .site-list__link {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    color: $header-text;
+    font-size: 20px;
+    line-height: 25px;
+
+    &--color-toggle {
+      color: $alt-text;
+    }
+  }
+
+  .site-list__link--active.site-list__link--color-toggle {
+    border-bottom: 2px solid #ffffff;
   }
 }
