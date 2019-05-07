@@ -90,30 +90,41 @@
         </ul>
       </section>
       <section class="page-main__example example">
-        <h2 class="example__header">Живой пример</h2>
-        <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="total example__story">
-          <span class="total__desc">Снижение веса</span>
-          <span class="total__outlay">5 Кг</span>
-        </div>
-        <div class="total example__story">
-          <span class="total__desc">Затрачено времени</span>
-          <span class="total__outlay">60 дней</span>
-        </div>
-        <div class="example__story total-food example__story--inline">
-          <span class="total-food__desc">Затраты на питание:</span>
-          <span class="total-food__outlay">15 000 руб.</span>
+        <div class="example__column">
+          <h2 class="example__header">Живой пример</h2>
+          <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="total example__story">
+            <div class="total__item">
+            <div class="total__wrapper">
+              <p class="total__desc">Снижение веса</p>
+              <span class="total__outlay">5 Кг</span>
+            </div>
+            </div>
+            <div class="total__item">
+            <div class="total__wrapper">
+              <p class="total__desc">Затрачено времени</p>
+              <span class="total__outlay">60 дней</span>
+            </div>
+            </div>
+            <div class="total__item total__item--inline">
+            <span class="total-food__desc">Затраты на питание:</span>
+            <span class="total-food__outlay">15 000 руб.</span>
+            </div>
+          </div>
         </div>
         <div class="example__progress progress">
-          <img class="progress__image" src="img/before-mobile@1x.png" width="311" height="232" alt="Пример как выглядит кот до">
-          <img class="progress__image" src="img/after-mobile@1x.png" width="311" height="232" alt="Пример как выглядит кот после">
-          <button class="progress__btn" type="button">До</button>
-          <div class="range progress__range">
-            <label>
-              <input class="range__input" type="range">
-            </label>
+          <img class="progress__image  progress__image--before" src="img/before-mobile@1x.png" width="311" height="232" alt="Пример как выглядит кот до">
+          <img class="progress__image progress__image--after" src="img/after-mobile@1x.png" width="311" height="232" alt="Пример как выглядит кот после">
+          <div class="progress__wrap">
+            <button class="progress__btn" type="button">Было</button>
+            <div class="range progress__range">
+              <label>
+                <input class="range__input visually-hidden" type="range" value="50" min="1" max="100" step="1">
+                <div class="range__control"></div>
+              </label>
+            </div>
+            <button class="progress__btn" type="button">Стало</button>
           </div>
-          <button class="progress__btn" type="button">После</button>
         </div>
       </section>
     </main>

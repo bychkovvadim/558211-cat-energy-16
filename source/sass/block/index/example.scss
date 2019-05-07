@@ -1,5 +1,8 @@
 .example {
   background-color: $alt-background;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .example__header {
@@ -15,10 +18,15 @@
 .example__desc {
   @include clear-indents;
   margin: 0 20px;
+  margin-bottom: 25px;
 }
 
 .example__story {
-  margin: 20px;
+  margin: 0 20px;
+}
+
+.example__progress {
+  width: 100%;
   margin-bottom: 40px;
 }
 

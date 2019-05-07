@@ -50,6 +50,15 @@
   .page-header__navigation {
     margin-left: auto;
   }
+
+  .page-header__logo {
+    flex-shrink: 0;
+  }
+
+  .page-header__logo-image {
+    width: 174px;
+    height: 59px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -61,7 +70,8 @@
     margin-left: auto;
   }
 
-  .page-header__logo {
-    flex-shrink: 0;
+  .page-header__logo-image {
+    width: 203px;
+    height: 60px;
   }
 }

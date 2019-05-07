@@ -1,5 +1,27 @@
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress__image {
+  &--before {
+    width: 100%;
+  }
+
+  &--after {
+    width: 0;
+  }
+}
+
+.progress__wrap {
+  display: flex;
+  align-items: center;
+}
+
 .progress__btn {
   @include clear-btn;
+  padding: 0 19px;
   font-family: $header-font;
   color: $header-text;
   font-weight: 400;
