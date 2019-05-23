@@ -8,13 +8,18 @@
 .page-header__logo {
   @include clear_indents;
   display: block;
+  padding: 11px 20px;
 
-  &:hover,
-  &:focus {
+  &[hfef] {
+    cursor: pointer;
+  }
+
+  &[href]:hover,
+  &[href]:focus {
     opacity: 0.8;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.6;
   }
 
@@ -38,20 +43,19 @@
   }
 
   .page-header__wrapper {
-    display: inline-flex;
-    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    width: 84.723%;
-    margin: 0 auto;
-    padding: 24px 0;
+    width: 100%;
+    padding-top: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 52px;
     border: none;
   }
 
-  .page-header__navigation {
-    margin-left: auto;
-  }
-
   .page-header__logo {
+    @include clear_indents;
     flex-shrink: 0;
   }
 
@@ -64,6 +68,10 @@
 @media (min-width: $desktop-width) {
   .page-header {
     width: $desktop-width;
+  }
+
+  .page-header__wrapper {
+    padding: 54px 110px 52px;
   }
 
   .page-header__navigation {

@@ -17,13 +17,77 @@
 .progress__wrap {
   display: flex;
   align-items: center;
+  margin-top: 11px;
 }
 
 .progress__btn {
   @include clear-btn;
   padding: 0 19px;
   font-family: $header-font;
+  font-size: 16px;
+  line-height: 20px;
   color: $header-text;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .progress {
+    position: relative;
+  }
+
+  .progress__container-img {
+    width: 100%;
+    height: 517px;
+  }
+
+  .progress__image {
+    width: 690px;
+    height: 517px;
+    left: 6%;
+    top: 6%;
+    position: absolute;
+    max-width: 100%;
+
+    &--before {
+      clip: rect(auto, 345px, auto, auto);
+    }
+
+    &--after {
+      clip: rect(auto, auto, auto, 345px);
+    }
+  }
+
+  .progress__wrap {
+    margin-top: 47px;
+  }
+
+  .progress__btn {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 5px 0;
+    margin: 0 23px;
+    border-bottom: 1px dotted #d9d9d9;
+
+    &:hover,
+    :focus {
+      border-bottom: 1px solid #d9d9d9;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .progress__image {
+    left: 8%;
+    top: -5%;
+  }
+
+  .progress__wrap {
+    margin-top: 6px;
+    margin-left: 30px;
+  }
 }

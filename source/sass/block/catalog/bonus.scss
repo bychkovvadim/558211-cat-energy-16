@@ -4,7 +4,7 @@
 
 .bonus__desc {
   position: relative;
-  width: 159px;
+  width: 165px;
   margin: 0 auto;
   padding-top: 186px;
   padding-bottom: 43px;
@@ -15,7 +15,7 @@
 
   &::before {
     position: absolute;
-    top: 20%;
+    top: 23%;
     right: 32%;
     content: "";
     width: 56px;
@@ -27,11 +27,27 @@
 @media (min-width: $tablet-width) {
   .bonus {
     @include clear-indents;
+    background: $main-color url("../img/gift-photo-tablet@1x.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .bonus__desc {
+    max-width: 100%;
+    padding: 70px 100px;
+    padding-left: 400px;
+    text-align: start;
+
+    &::before {
+      top: 32%;
+      left: 10%;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .bonus {
     @include clear-indents;
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 }

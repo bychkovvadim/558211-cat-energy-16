@@ -1,6 +1,16 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
 .social__item {
-  display: inline-flex;
-  margin: 0 18px;
+  @include clear-list;
+  margin: 0 19px;
+  cursor: pointer;
 }
 
 .social__image {
@@ -33,6 +43,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .social {
+    padding: 0;
+    border: none;
+  }
+
   .social__image {
     &--vk {
       width: 30px;

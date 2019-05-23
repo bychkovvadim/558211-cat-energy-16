@@ -1,9 +1,11 @@
 var map;
 var positionMap = {lat: 59.938985, lng: 30.318867};
 var positionMarker = {lat: 59.938708, lng: 30.323036};
+var navToggle = document.querySelector('.nav-toggle');
+var navigation = document.querySelector('.site-list');
 
 function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
+  map = new google.maps.Map(document.getElementById('map'), {
     center: positionMap,
     zoom: 17,
     disableDefaultUI: true,
@@ -15,3 +17,11 @@ function initMap() {
     map: map
   });
 }
+
+navToggle.classList.remove('nav-toggle--no-js');
+navigation.classList.remove('site-list--no-js');
+
+  navToggle.addEventListener('click', function() {
+    navToggle.classList.toggle('nav-toggle--open');
+    navigation.classList.toggle('site-list--close');
+});

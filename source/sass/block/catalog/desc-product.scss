@@ -1,7 +1,9 @@
 .desc-product__header {
   @include clear-indents;
   width: 60%;
-  margin-bottom: 15px;
+  max-width: 100px;
+  margin-top: 21px;
+  margin-bottom: 13px;
   font-family: $header-font;
   color: $header-text;
   font-size: 16px;
@@ -16,6 +18,7 @@
 
 .desc-product__link {
   @include clear-link;
+  display: block;
 }
 
 .desc-product__specification {
@@ -34,7 +37,7 @@
 
 @media (min-width: $tablet-width) {
   .desc-product__header {
-    width: 150px;
+    max-width: 230px;
     margin: 0 auto;
     margin-bottom: 24px;
     font-size: 20px;
@@ -45,7 +48,7 @@
   .desc-product__specification {
     font-size: 16px;
     line-height: 16px;
-    margin-bottom: 19.9%;
+    margin-bottom: 30px;
   }
 
   .desc-product__line {
@@ -53,6 +56,13 @@
   }
 
   .desc-product__cell {
-    padding: 5px 0;
+    padding: 8px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .desc-product__header {
+    width: 80%;
+    margin-bottom: 19px;
   }
 }

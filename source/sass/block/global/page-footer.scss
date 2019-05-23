@@ -1,5 +1,5 @@
 .page-footer {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   background-color: $alt-background;
 }
@@ -8,7 +8,7 @@
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
-  padding: 20px 28px;
+  padding: 29px 20px 25px 20px;
   box-sizing: border-box;
 
   &--background-toggle {
@@ -19,6 +19,8 @@
 .page-footer__container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .map__container {
@@ -30,22 +32,15 @@
   display: block;
   width: 128px;
   height: 24px;
-  margin: 35px auto;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .page-footer__social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 22px;
-  padding: 0;
-}
-
-.page-footer__copyright {
-  margin: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include clear-indents;
+  width: 100%;
+  margin: 0 -6px;
 }
 
 @media (min-width: $tablet-width) {
@@ -54,15 +49,18 @@
   }
 
   .page-footer__container {
+    @include clear-indents;
     flex-direction: row;
-    width: 92.2%;
-    margin: 0 auto;
-    padding: 25px 0;
+    align-items: center;
+    max-width: 100%;
+    padding: 55px 30px;
+    padding-top: 85px;
   }
 
   .page-footer__logo {
+    @include clear-indents;
     width: 33%;
-    text-align: center;
+    text-align: start;
   }
 
   .page-footer__social {
@@ -70,14 +68,7 @@
   }
 
   .page-footer__collaboration {
-    &--background-toggle {
-      background-color: $main-background;
-    }
-  }
-
-  .page-footer__copyright {
-    width: 33%;
-    justify-content: center;
+    padding: 65px 70px;
   }
 }
 
@@ -87,17 +78,18 @@
     width: 100%;
   }
 
-  .page-footer__collaboration {
-    position: absolute;
-    top: 25%;
-    left: 10%;
-    width: 570px;
-    padding: 69px 76px;
-    z-index: 1;
+  .page-footer__container {
+    padding: 35px 110px;
   }
 
-  .page-footer__logo {
-    text-align: left;
+  .page-footer__collaboration {
+    position: absolute;
+    top: 17.1%;
+    left: 7.7%;
+    width: 570px;
+    padding: 65px 85px 61px 74px;
+    z-index: 1;
+    background-color: $main-background;
   }
 
   .page-footer__copyright {

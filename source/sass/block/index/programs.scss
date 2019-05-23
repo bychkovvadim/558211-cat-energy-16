@@ -1,17 +1,24 @@
 .programs__item {
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 19px;
+  padding: 31px 21px 19px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .programs__item {
-    width: 708px;
     flex-wrap: wrap;
+    padding: 77px 281px 60px 52px;
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .programs__item {
-    width: 570px;
+    max-width: 570px;
+    margin: 0 40px;
+    padding: 75px 57px 58px 51px;
   }
 }

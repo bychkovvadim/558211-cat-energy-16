@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   position: relative;
-  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -11,16 +10,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 20px;
+  margin-bottom: 21px;
 }
 
 .page-main__programs {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: auto 20px;
+  margin-bottom: 17px;
 }
 
 .page-main__manual {
-  margin: 0 auto;
+  margin: 0 20px;
+  margin-bottom: 22px;
 }
 
 .page-main__example {
@@ -41,44 +44,62 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
-    width: $tablet-width;
     flex-direction: row;
     justify-content: center;
   }
 
   .page-main__promo {
+    position: relative;
     align-items: flex-start;
-    margin-right: 20%;
-    margin-left: 5%;
-    margin-bottom: 529px;
+    margin: 0 30px;
+    padding-right: 20%;
+    padding-left: 90px;
+    padding-bottom: 529px;
   }
 
   .page-main__programs {
     flex-direction: column;
     flex-wrap: wrap;
+    margin: auto 30px;
+  }
+
+  .page-main__manual {
+    padding: 0 30px;
+    margin: 0;
+    margin-bottom: 43px;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .page-main__form {
+    margin: 0 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-main {
-    width: $desktop-width;
-  }
-
   .page-main__promo {
-    margin-top: 89px;
-    margin-bottom: 250px;
-    margin-right: 60%;
-    margin-left: 10%;
+    position: initial;
+    margin-top: 53px;
+    margin-bottom: 268px;
+    margin-right: 55.5%;
+    margin-left: 13.2%;
+    padding: 0;
   }
 
   .page-main__programs {
     @include clear-indents;
-    width: 84.723%;
     justify-content: space-between;
     flex-direction: row;
+    margin: auto -40px;
+    margin-bottom: 58px;
   }
 
   .page-main__manual {
-    width: 84.723%;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+  }
+
+  .page-main__form {
+    margin: 0 110px;
   }
 }

@@ -1,5 +1,7 @@
 .collaboration__description {
   @include clear-indents;
+  width: 50%;
+  max-width: 160px;
   font-family: $header-font;
   font-size: 16px;
   line-height: 20px;
@@ -8,6 +10,36 @@
 }
 
 .collaboration__address {
+  width: 50%;
+  max-width: 160px;
   line-height: 20px;
   font-style: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .collaboration__description {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .collaboration__address {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+
+    & span {
+      display: block;
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .collaboration__address {
+    text-align: start;
+
+    & span {
+      margin-top: 18px;
+    }
+  }
 }

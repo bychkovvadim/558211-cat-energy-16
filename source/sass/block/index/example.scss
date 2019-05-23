@@ -1,13 +1,20 @@
 .example {
+  width: 100%;
   background-color: $alt-background;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
+.example__column {
+  max-width: 100%;
+  margin: 0 20px;
+}
+
 .example__header {
   @include clear-indents;
-  margin: 33px 20px;
+  margin-bottom: 23px;
+  padding-top: 17px;
   font-family: $header-font;
   font-weight: 400;
   font-size: 36px;
@@ -17,37 +24,69 @@
 
 .example__desc {
   @include clear-indents;
-  margin: 0 20px;
-  margin-bottom: 25px;
-}
-
-.example__story {
-  margin: 0 20px;
+  max-width: 270px;
+  margin-bottom: 24px;
 }
 
 .example__progress {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
   .example {
-    background: linear-gradient(to top, $alt-background 50%, $main-background 50%);
+    background: linear-gradient(to top, #f2f2f2 42.9%, #ffffff 30%);
   }
 
   .example__header {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 66px;
+    padding-top: 0;
   }
 
   .example__desc {
+    max-width: 720px;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 53px;
+    padding-right: 20px;
+  }
+
+  .example__column {
+    margin: 0 30px;
+    margin-bottom: 31px;
+  }
+
+  .example__progress {
+    margin-bottom: 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient(to top, $alt-background 50%, $main-background 50%);
+    flex-direction: row;
+    background: linear-gradient(to top, #f2f2f2 69.2%, #ffffff 30%);
+  }
+
+  .example__column {
+    max-width: 33%;
+    margin-left: 110px;
+    margin-bottom: 0;
+  }
+
+  .example__header {
+    padding-top: 71px;
+    margin-bottom: 147px;
+  }
+
+  .example__desc {
+    max-width: 965px;
+    margin-bottom: 69px;
+    padding-right: 40px;
+  }
+
+  .example__progress {
+    margin-top: 45px;
   }
 }

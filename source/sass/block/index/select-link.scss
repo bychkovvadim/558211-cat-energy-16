@@ -1,17 +1,21 @@
 .select-link {
   @include clear-indents;
+  width: 100%;
+  min-width: 280px;
+  box-sizing: border-box;
 }
 
 .select-link__link {
   @include clear-link;
   display: inline-block;
-  width: 245px;
-  padding: 14px 0;
+  width: 100%;
+  padding: 11px 15px;
   font-family: $header-font;
   color: $alt-text;
   text-transform: uppercase;
   text-align: center;
   background-color: $main-color;
+  box-sizing: inherit;
 
   &:hover,
   &:focus {
@@ -21,5 +25,14 @@
 
   &:active {
     color: rgba($alt-text, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .select-link__link {
+    width: auto;
+    padding: 16px 27px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }

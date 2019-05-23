@@ -1,5 +1,6 @@
 .comment {
   display: flex;
+  flex-wrap: wrap;
   font-family: $header-font;
   color: $header-text;
   font-size: 24px;
@@ -9,26 +10,34 @@
 }
 
 .comment__legend {
-  margin-bottom: 31px;
+  margin-bottom: 32px;
 }
 
 .comment__textarea {
   width: 100%;
-  padding: 10px;
+  padding: 13px;
   font-family: $header-font;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  color: $desc-text;
+  border: 1px solid $border-color;
   box-sizing: border-box;
+
+  &::placeholder {
+    color: $desc-text;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .comment__legend {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 76px;
   }
 
   .comment__textarea {
+    padding: 16px;
     font-size: 20px;
     line-height: 20px;
   }

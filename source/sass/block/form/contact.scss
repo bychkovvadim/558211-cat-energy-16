@@ -25,21 +25,77 @@
   cursor: pointer;
 }
 
+.contact__text {
+  flex-grow: 0;
+}
+
 .contact__input {
   flex-grow: 1;
-  margin-left: 14px;
-  padding-left: 16px;
+  margin-left: 10px;
+  padding: 13px 45px 13px 15px;
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: $desc-text;
+  border: 1px solid $border-color;
+
+  &::placeholder {
+    color: $desc-text;
+  }
+
+
+  &--mail {
+    background: url("../../../img/icon-mail.svg") no-repeat 93% 53%;
+    background-size: 18px 20px;
+  }
+
+  &--tel {
+    background: url("../../../img/icon-phone.svg") no-repeat 93% 53%;
+    background-size: 18px 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .contact__legend {
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 36px;
   }
 
   .contact__label {
+    width: 100%;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .contact__input {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 13px 45px 13px 25px;
+
+    &--mail {
+      background: url("../../../img/icon-mail.svg") no-repeat 97% 53%;
+      background-size: 18px 20px;
+    }
+
+    &--tel {
+      background: url("../../../img/icon-phone.svg") no-repeat 97% 53%;
+      background-size: 18px 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact__row {
+    width: 100%;
+    display: inline-flex;
+  }
+
+  .contact__label {
+    width: 568px;
+
+    &:first-child {
+      padding-right: 78px;
+    }
   }
 }

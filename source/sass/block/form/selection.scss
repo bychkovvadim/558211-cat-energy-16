@@ -1,12 +1,13 @@
 .selection {
   display: flex;
+  align-self: baseline;
   border: none;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
 }
 
 .selection__label {
-  padding-left: 50px;
+  padding-left: 47px;
   margin-bottom: 25px;
   font-family: $header-font;
   color: $header-text;
@@ -14,16 +15,69 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+  position: relative;
   cursor: pointer;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  &::before {
+    content: "";
+    display: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: $main-color;
+    margin-top: 0;
+    position: absolute;
+    left: 9px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $border-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .selection {
+    border: 1px solid $border-color;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
   .selection__label {
+    padding-left: 62px;
+    margin-bottom: 32px;
     font-size: 20px;
     line-height: 20px;
+
+    &::before {
+      width: 18px;
+      height: 18px;
+      left: 12px;
+    }
+
+    &::after {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection {
+    width: 518px;
   }
 }

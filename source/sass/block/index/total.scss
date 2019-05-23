@@ -5,6 +5,7 @@
 }
 
 .total__item {
+  @include clear-indents;
   max-width: 124px;
   width: 100%;
   margin-bottom: 20px;
@@ -19,6 +20,7 @@
     max-width: 100%;
     display: block;
     border: none;
+    margin-bottom: 28px;
     font-family: $header-font;
     font-size: 14px;
     line-height: 20px;
@@ -27,14 +29,14 @@
 }
 
 .total__wrapper {
-  max-width: 110px;
+  max-width: max-content;
   display: flex;
   flex-direction: column-reverse;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -20px;
   padding: 0 10px 0;
-  background: $alt-background;
+  background-color: $alt-background;
 }
 
 .total__desc {
@@ -42,10 +44,85 @@
   text-transform: lowercase;
   font-size: 12px;
   line-height: 12px;
+  padding-top: 6px;
 }
 
 .total__outlay {
   font-family: $header-font;
   font-size: 24px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .total {
+    justify-content: flex-start;
+  }
+
+  .total__item {
+    max-width: 162px;
+    margin-right: 41px;
+    padding: 12px 10px 13px;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 3px;
+
+    &--inline {
+      max-width: 190px;
+      justify-content: flex-end;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: 0;
+      padding: 0;
+      text-align: end;
+    }
+
+    &--inline span {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+
+  .total__wrapper {
+    background-color: $main-background;
+    padding: 0 6px 0;
+  }
+
+  .total__desc {
+    font-size: 14px;
+    line-height: 14px;
+    padding-top: 0;
+  }
+
+  .total__outlay {
+    padding-bottom: 13px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .total__item {
+    margin-bottom: 37px;
+    padding: 12px 7px 3px;
+
+    &--inline {
+      display: inline-flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      align-items: center;
+      max-width: 100%;
+      text-align: start;
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    &--inline span {
+      padding-right: 60px;
+    }
+  }
+
+  .total__wrapper {
+    margin-bottom: -10px;
+    background-color: $alt-background;
+  }
 }

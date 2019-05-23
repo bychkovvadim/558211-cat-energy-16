@@ -16,7 +16,8 @@
 }
 
 .more-product__show {
-  padding-top: 60px;
+  padding-top: 65px;
+  margin-bottom: 7px;
   font-family: $header-font;
   font-size: 16px;
   line-height: 20px;
@@ -27,36 +28,42 @@
 
 .more-product__info {
   @include clear-indents;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
+  .more-product {
+    border: 1px solid $border-color;
+
+    &::before {
+      top: 55px;
+      width: 60px;
+      height: 60px;
+      background: url("../img/icon-plus.svg") no-repeat 0 50%;
+    }
+  }
+
   .more-product__show {
-    padding-top: 166px;
+    padding-top: 145px;
+    font-size: 20px;
   }
 
   .more-product__info {
-    padding-top: 25px;
-    padding-bottom: 52px;
+    padding-top: 20px;
+    padding-bottom: 88px;
+    font-size: 16px;
   }
 
   .more-product__wrapper {
-    margin: 16%;
+    padding: 0 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .more-product {
-    outline: 1px solid $border-color;
-    box-sizing: border-box;
-
-    &::before {
-      width: 61px;
-      height: 61px;
-      background: url("../img/icon-plus.svg") no-repeat;
-    }
+  .more-product__wrapper {
+    padding: 0 38px;
   }
 }
