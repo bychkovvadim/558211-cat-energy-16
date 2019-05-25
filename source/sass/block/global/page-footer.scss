@@ -55,12 +55,22 @@
     max-width: 100%;
     padding: 55px 30px;
     padding-top: 85px;
+    padding-right: 6px;
   }
 
   .page-footer__logo {
     @include clear-indents;
     width: 33%;
     text-align: start;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   .page-footer__social {
@@ -79,13 +89,14 @@
   }
 
   .page-footer__container {
-    padding: 35px 110px;
+    padding: 35px 40px;
+    padding-right: 8px;
   }
 
   .page-footer__collaboration {
     position: absolute;
     top: 17.1%;
-    left: 7.7%;
+    left: 3.3%;
     width: 570px;
     padding: 65px 85px 61px 74px;
     z-index: 1;

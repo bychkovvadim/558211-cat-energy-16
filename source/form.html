@@ -12,7 +12,7 @@
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="203" height="60" alt="Логотип Кэт Энерджи">
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg" width="203" height="60" alt="Логотип Кэт Энерджи">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="59" alt="Логотип Кэт Энерджи">
             <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт Энерджи">
           </picture>
@@ -46,11 +46,11 @@
                 <legend class="visually-hidden">Основная информация</legend>
                 <label class="form-info__label">
                   <span class="form-info__text">Имя:*</span>
-                  <input class="form-info__input" type="text" name="name" id="name" placeholder="Барсик">
+                  <input class="form-info__input" type="text" name="name" id="name" placeholder="Барсик" required>
                 </label>
                 <label class="form-info__label">
                   <span class="form-info__text">Вес (Кг):*</span>
-                  <input class="form-info__input" type="number" name="weight" id="weight" placeholder="7">
+                  <input class="form-info__input" type="number" name="weight" id="weight" placeholder="7" required>
                 </label>
                 <label class="form-info__label">
                   <span class="form-info__text">Возраст (лет):</span>
@@ -72,11 +72,11 @@
               <div class="contact__row">
                 <label class="contact__label">
                   <span class="contact__text">E-mail:*</span>
-                  <input class="contact__input contact__input--mail" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+                  <input class="contact__input contact__input--mail" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
                 </label>
                 <label class="contact__label">
                   <span class="contact__text">Телефон:*</span>
-                  <input class="contact__input contact__input--tel" type="tel" name="tel" id="tel" placeholder="8 (960) 900 60 90">
+                  <input class="contact__input contact__input--tel" type="tel" name="tel" id="tel" placeholder="8 (960) 900 60 90" required>
               </label>
               </div>
             </fieldset>
@@ -123,7 +123,7 @@
         <div class="map__container" id="map"></div>
       </section>
       <div class="page-footer__container">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo" href="#S">
           <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Кэт Энерджи">
         </a>
         <ul class="page-footer__social social">

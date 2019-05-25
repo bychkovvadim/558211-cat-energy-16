@@ -35,7 +35,7 @@
 }
 
 .catalog__bonus {
-  margin: 39px 20px;
+  margin: 37px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -80,7 +80,12 @@
 
 @media (min-width: $desktop-width) {
   .catalog__wrapper {
-    padding: 0 110px;
+    padding: 0 40px;
+    overflow: hidden;
+  }
+
+  .catalog__list {
+    margin-bottom: 15px;
   }
 
   .catalog__item {
@@ -91,5 +96,13 @@
 
   .catalog__head {
     margin-top: 18px;
+  }
+
+  .catalog__other {
+    margin-bottom: 86px;
+  }
+
+  .catalog__bonus {
+    padding: 45px 10px;
   }
 }

@@ -50,11 +50,11 @@
     max-width: 100%;
 
     &--before {
-      clip: rect(auto, 345px, auto, auto);
+      clip: rect(auto, 338px, auto, auto);
     }
 
     &--after {
-      clip: rect(auto, auto, auto, 345px);
+      clip: rect(auto, auto, auto, 338px);
     }
   }
 
@@ -84,10 +84,19 @@
   .progress__image {
     left: 8%;
     top: -5%;
+
+    &--before {
+      clip: rect(auto, 365px, auto, auto);
+    }
+
+    &--after {
+      clip: rect(auto, auto, auto, 365px);
+    }
   }
 
   .progress__wrap {
+    margin: 0 auto;
+    margin-left: 117px;
     margin-top: 6px;
-    margin-left: 30px;
   }
 }

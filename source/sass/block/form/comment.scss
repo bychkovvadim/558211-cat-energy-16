@@ -10,7 +10,30 @@
 }
 
 .comment__legend {
+  position: relative;
   margin-bottom: 32px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -20px;
+    width: $mobile-width;
+    height: 3px;
+    background: $main-color;
+    z-index: -1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: -20px;
+    width: 160px;
+    height: 3px;
+    background: #ffffff;
+    z-index: -1;
+  }
 }
 
 .comment__textarea {
@@ -27,6 +50,15 @@
   &::placeholder {
     color: $desc-text;
   }
+
+  &:hover {
+    outline: 1px solid #bababa;
+  }
+
+  &:active,
+  &:focus {
+    outline: 2px solid #444444;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -34,11 +66,32 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+
+    &::before {
+      width: $tablet-width;
+      left: -70px;
+    }
+
+    &::after {
+      width: 258px;
+      right: -39px;
+    }
   }
 
   .comment__textarea {
     padding: 16px;
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment__legend {
+    width: 14.5%;
+
+    &::before {
+      width: $desktop-width;
+      left: -40px;
+    }
   }
 }

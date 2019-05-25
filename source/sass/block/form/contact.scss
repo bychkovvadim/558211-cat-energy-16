@@ -9,6 +9,29 @@
 
 .contact__legend {
   margin-bottom: 30px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 23%;
+    left: -20px;
+    width: 320px;
+    height: 3px;
+    background:$main-color;
+    z-index: -1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 24%;
+    left: -20px;
+    width: 221px;
+    height: 3px;
+    background: $main-background;
+    z-index: -1;
+  }
 }
 
 .contact__label {
@@ -43,7 +66,6 @@
     color: $desc-text;
   }
 
-
   &--mail {
     background: url("../../../img/icon-mail.svg") no-repeat 93% 53%;
     background-size: 18px 20px;
@@ -53,6 +75,36 @@
     background: url("../../../img/icon-phone.svg") no-repeat 93% 53%;
     background-size: 18px 20px;
   }
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &--tel:active,
+  &--tel:focus {
+    background: url("../../../img/icon-phone-active.svg") no-repeat 93% 53%;
+    background-size: 18px 20px;
+    outline: 2px solid #444444;
+  }
+
+  &--mail:active,
+  &--mail:focus {
+    background: url("../../../img/icon-mail-active.svg") no-repeat 93% 53%;
+    background-size: 18px 20px;
+    outline: 2px solid #444444;
+  }
+
+  &--tel:focus:invalid {
+    background: url("../../../img/icon-phone-error.svg") no-repeat 93% 53%;
+    background-size: 18px 20px;
+    outline: 2px solid #ff8282;
+  }
+
+  &--mail:focus:invalid {
+    background: url("../../../img/icon-mail-error.svg") no-repeat 93% 53%;
+    background-size: 18px 20px;
+    outline: 2px solid #ff8282;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -60,6 +112,18 @@
     margin-bottom: 72px;
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      top: 50%;
+      left: -70px;
+      width: $tablet-width;
+    }
+
+    &::after {
+      top: 50%;
+      left: -39px;
+      width: 590px;
+    }
   }
 
   .contact__label {
@@ -82,6 +146,19 @@
       background: url("../../../img/icon-phone.svg") no-repeat 97% 53%;
       background-size: 18px 20px;
     }
+
+    &--mail:active,
+    &--mail:focus {
+      background-position: 97% 53%;
+    }
+
+    &--tel:focus:invalid {
+      background-position: 97% 53%;
+    }
+
+    &--mail:focus:invalid {
+      background-position: 97% 53%;
+    }
   }
 }
 
@@ -96,6 +173,15 @@
 
     &:first-child {
       padding-right: 78px;
+    }
+  }
+
+  .contact__legend {
+    width: 43%;
+
+    &::before {
+      width: $desktop-width;
+      left: -40px;
     }
   }
 }

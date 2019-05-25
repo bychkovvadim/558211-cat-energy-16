@@ -47,7 +47,22 @@
 @media (min-width: $desktop-width) {
   .bonus {
     @include clear-indents;
-    flex: 0 0 25%;
-    max-width: 25%;
+    width: 245px;
+    background: url(../img/gift-photo-desktop@1x.jpg);
+  }
+
+  .bonus__wrap {
+    padding: 40px 10px;
+  }
+
+  .bonus__desc {
+    padding: 0;
+    text-align: center;
+    padding-top: 147px;
+
+    &::before {
+      top: 12%;
+      left: 34%;
+    }
   }
 }

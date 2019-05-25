@@ -1,3 +1,7 @@
+.manual {
+  width: 100%;
+}
+
 .manual__list {
   @include clear-list;
   display: flex;
@@ -21,6 +25,7 @@
 }
 
 .manual__ico {
+  display: block;
   flex-shrink: 0;
   width: 60px;
   height: 60px;
@@ -55,11 +60,12 @@
   }
 
   .manual__item {
-    display: flex;
+    max-width: 250px;
+    min-height: 230px;
+    display: block;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    max-width: 250px;
     margin-bottom: 133px;
     margin-right: 133px;
     font-size: 16px;
@@ -108,8 +114,8 @@
   }
 
   .manual__item {
-    flex: 25%;
-    margin-right: 75px;
+    flex: 0 0 25%;
+    margin-right: 70px;
     margin-bottom: 55px;
 
     &:nth-child(even) {

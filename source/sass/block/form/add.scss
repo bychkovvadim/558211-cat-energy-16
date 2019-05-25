@@ -17,11 +17,34 @@
 }
 
 .add__column {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .add__legend {
-  margin-bottom: 29px;
+  margin-bottom: 32px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -20px;
+    width: $mobile-width;
+    height: 3px;
+    background: $main-color;
+    z-index: -1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: -20px;
+    width: 181px;
+    height: 3px;
+    background: #ffffff;
+    z-index: -1;
+  }
 }
 
 .add__label {
@@ -63,6 +86,11 @@
     height: 30px;
     border: 1px solid #d9d9d9;
   }
+
+  &:hover::after,
+  &:focus::after {
+    border: 1px solid #bababa;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -82,6 +110,16 @@
     margin-bottom: 63px;
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      left: -70px;
+      width: $tablet-width;
+    }
+
+    &::after {
+      right: -40px;
+      width: 290px;
+    }
   }
 
   .add__label {
@@ -105,5 +143,14 @@
   .add__column {
     margin-bottom: 62px;
     padding-right: 17px;
+  }
+
+  .add__legend {
+    width: 17.1%;
+
+    &::before {
+      width: $desktop-width;
+      left: -40px;
+    }
   }
 }

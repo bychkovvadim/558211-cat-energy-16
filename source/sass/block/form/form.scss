@@ -50,7 +50,7 @@
 
 .form__add {
   @include clear-indents;
-  margin-bottom: 27px;
+  margin-bottom: 20px;
 }
 
 .form__btn {
@@ -87,6 +87,11 @@ input[type="radio"]:checked + label {
   &::before {
     display: block;
   }
+}
+
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:disabled + label {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

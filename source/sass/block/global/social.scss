@@ -9,7 +9,7 @@
 
 .social__item {
   @include clear-list;
-  margin: 0 19px;
+  margin: 0px 20px;
   cursor: pointer;
 }
 
@@ -46,6 +46,11 @@
   .social {
     padding: 0;
     border: none;
+  }
+
+  .social__item {
+    margin: 0px 4px;
+    padding-right: 20px;
   }
 
   .social__image {

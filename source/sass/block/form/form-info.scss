@@ -35,6 +35,19 @@
   &::placeholder {
     color: $desc-text;
   }
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:active,
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:focus:invalid {
+    outline: 2px solid #ff8282;
+  }
 }
 
 @media (min-width: $tablet-width) {

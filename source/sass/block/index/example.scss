@@ -35,7 +35,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background: linear-gradient(to top, #f2f2f2 42.9%, #ffffff 30%);
+    background: linear-gradient(to top, #f2f2f2 44.5%, #ffffff 30%);
   }
 
   .example__header {
@@ -70,8 +70,8 @@
   }
 
   .example__column {
-    max-width: 33%;
-    margin-left: 110px;
+    max-width: 37%;
+    margin-left: 40px;
     margin-bottom: 0;
   }
 
@@ -83,7 +83,7 @@
   .example__desc {
     max-width: 965px;
     margin-bottom: 69px;
-    padding-right: 40px;
+    padding-right: 45px;
   }
 
   .example__progress {

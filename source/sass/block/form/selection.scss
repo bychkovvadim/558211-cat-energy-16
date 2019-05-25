@@ -48,6 +48,11 @@
     border-radius: 50%;
     border: 1px solid $border-color;
   }
+
+  &:hover::after {
+    border: 1px solid #bababa;
+  }
+
 }
 
 @media (min-width: $tablet-width) {
