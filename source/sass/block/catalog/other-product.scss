@@ -59,7 +59,7 @@
       position: absolute;
       content: "";
       top: 50%;
-      right: 0px;
+      right: 0;
       width: 413px;
       height: 3px;
       background: #ffffff;
@@ -101,10 +101,6 @@
 
     &::before {
       width: $desktop-width;
-    }
-
-    &::after {
-
     }
   }
 
