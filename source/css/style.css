@@ -343,6 +343,7 @@ th {
 /* Цвета */
 /* Шрифты */
 /* Размеры для адаптивных сеток */
+/* Параметры для оптимизации графики */
 /* Сброс отступов */
 /* Сброс стилей по умалчанию для списков */
 /* Сброс стилей по умалчанию для кнопок */
@@ -984,8 +985,12 @@ img {
   position: absolute;
   width: 100%;
   height: 305px;
-  background: #68b738 url("/img/index-background-mobile@1x.jpg") no-repeat top;
+  background: #68b738 url("../img/index-background-mobile@1x.jpg") no-repeat top;
   z-index: -1; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .promo__background {
+      background: #68b738 url("../img/index-background-mobile@2x.jpg") no-repeat top;
+      background-size: 320px auto; } }
 
 .promo__header {
   margin: 0;
@@ -1074,7 +1079,13 @@ img {
     right: 0;
     width: 50%;
     min-height: 696px;
-    background: #68b738 url("../img/index-background-desktop@1x.jpg") no-repeat; }
+    background: #68b738 url("../img/index-background-desktop@1x.jpg") no-repeat; } }
+  @media (min-width: 1300px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1300px) and (min-resolution: 144dpi), (min-width: 1300px) and (min-resolution: 1.5dppx) {
+    .promo__background {
+      background: #68b738 url("../img/index-background-desctop@2x.jpg") no-repeat;
+      background-size: 1300px auto; } }
+
+@media (min-width: 1300px) {
   .promo__desc {
     margin-bottom: 51px; } }
 

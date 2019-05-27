@@ -1,6 +1,5 @@
 var map;
-var positionMap = {lat: 59.938985, lng: 30.318867};
-var positionMarker = {lat: 59.938708, lng: 30.323036};
+var positionMap = {lat: 59.938708, lng: 30.323036};
 var navToggle = document.querySelector('.nav-toggle');
 var navigation = document.querySelector('.site-list');
 
@@ -12,7 +11,7 @@ function initMap() {
     mapTypeId: google.maps.MapTypeId.ROADMAP
   });
   var marker = new google.maps.Marker({
-    position: positionMarker,
+    position: positionMap,
     icon: 'img/map-pin.png',
     map: map
   });

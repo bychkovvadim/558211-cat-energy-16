@@ -9,14 +9,16 @@
 
 .contact__legend {
   margin-bottom: 30px;
+  width: 210px;
   position: relative;
+  background-color: $main-background;
 
   &::before {
     position: absolute;
     content: "";
-    top: 23%;
+    top: 50%;
     left: -20px;
-    width: 320px;
+    width: 100vw;
     height: 3px;
     background: $main-color;
     z-index: -1;
@@ -25,7 +27,7 @@
   &::after {
     position: absolute;
     content: "";
-    top: 24%;
+    top: 50%;
     left: -20px;
     width: 221px;
     height: 3px;
@@ -109,6 +111,8 @@
 
 @media (min-width: $tablet-width) {
   .contact__legend {
+    width: 100%;
+    background-color: transparent;
     margin-bottom: 72px;
     font-size: 36px;
     line-height: 36px;
@@ -116,7 +120,6 @@
     &::before {
       top: 50%;
       left: -70px;
-      width: $tablet-width;
     }
 
     &::after {
@@ -180,7 +183,6 @@
     width: 43%;
 
     &::before {
-      width: $desktop-width;
       left: -40px;
     }
   }

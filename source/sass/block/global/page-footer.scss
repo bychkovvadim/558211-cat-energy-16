@@ -44,10 +44,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
-    width: $tablet-width;
-  }
-
   .page-footer__container {
     @include clear-indents;
     flex-direction: row;

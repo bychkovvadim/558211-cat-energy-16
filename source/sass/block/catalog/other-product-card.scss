@@ -7,25 +7,28 @@
 
 .other-product-card__header {
   @include clear-indents;
+  width: 100%;
   font-family: $header-font;
   color: $header-text;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  margin-bottom: 9px;
+  margin: 0 0 13px;
 }
 
 .other-product-card__specification {
   width: 100%;
   margin-bottom: 13px;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .other-product-card__cell {
-  float: left;
+  text-align: left;
 
   &--right {
-    float: right;
+    text-align: right;
   }
 }
 
@@ -45,6 +48,7 @@
   }
 
   .other-product-card__header {
+    width: 50%;
     margin-right: auto;
     margin-bottom: 28px;
     font-size: 20px;
@@ -61,7 +65,17 @@
   }
 
   .other-product-card__cell {
-    margin-left: 50px;
+    margin: 0;
+
+    &--left {
+      text-align: right;
+      width: 170px;
+    }
+
+    &--right {
+      text-align: right;
+      width: 95px;
+    }
   }
 }
 
@@ -77,7 +91,8 @@
 
   .other-product-card__specification {
     width: 33.3%;
-    margin-right: auto;
+    margin-top: 8px;
+    margin-right: 35px;
     margin-bottom: 0;
   }
 
@@ -91,5 +106,15 @@
 
   .other-product-card__cell {
     margin: 0;
+
+    &--left {
+      text-align: left;
+      width: 245px;
+    }
+
+    &--right {
+      text-align: left;
+      width: 45px;
+    }
   }
 }

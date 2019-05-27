@@ -29,7 +29,7 @@
     content: "";
     top: 50%;
     left: -20px;
-    width: $mobile-width;
+    width: 100vw;
     height: 3px;
     background: $main-color;
     z-index: -1;
@@ -94,6 +94,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .add {
+    flex-direction: row;
+  }
+
   .add__wrapper {
     flex-direction: row;
     align-items: baseline;
@@ -101,9 +105,9 @@
   }
 
   .add__column {
-    width: 230px;
+    width: 240px;
     margin-bottom: 50px;
-    padding-right: 56px;
+    padding-right: 45px;
   }
 
   .add__legend {
@@ -113,7 +117,6 @@
 
     &::before {
       left: -70px;
-      width: $tablet-width;
     }
 
     &::after {
@@ -140,16 +143,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .add {
+    flex-direction: column;
+  }
+
   .add__column {
     margin-bottom: 62px;
-    padding-right: 17px;
+    padding-right: 5px;
   }
 
   .add__legend {
     width: 17.1%;
 
     &::before {
-      width: $desktop-width;
       left: -40px;
     }
   }

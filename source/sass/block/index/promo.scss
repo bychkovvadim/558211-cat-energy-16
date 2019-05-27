@@ -1,16 +1,18 @@
-.promo {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .promo__background {
-  position: absolute;
   width: 100%;
   height: 305px;
-  background: $main-color url("/img/index-background-mobile@1x.jpg") no-repeat top;
+  margin: 0 -20px;
+  position: absolute;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-color: $main-color;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
   z-index: -1;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .promo__header {
@@ -89,6 +91,9 @@
 
 @media (min-width: $desktop-width) {
   .promo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: flex-start;
   }
 
@@ -107,10 +112,14 @@
   .promo__background {
     display: block;
     top: -170px;
-    right: 0;
+    right: 20px;
     width: 50%;
     min-height: 696px;
-    background: #68b738 url("../img/index-background-desktop@1x.jpg") no-repeat;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .promo__desc {
