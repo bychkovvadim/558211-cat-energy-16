@@ -4,20 +4,13 @@
 }
 
 .page-main__programs {
-  display: flex;
-  flex-direction: column;
-  margin: auto 20px;
+  margin: 0 auto;
   margin-bottom: 17px;
 }
 
 .page-main__manual {
   margin: 0 20px;
   margin-bottom: 22px;
-}
-
-.page-main__example {
-  display: flex;
-  flex-direction: column;
 }
 
 .page-main__catalog {
@@ -55,8 +48,7 @@
   }
 
   .page-main__manual {
-    padding: 0 30px;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 43px;
     border-bottom: 1px solid $border-color;
   }
@@ -89,7 +81,8 @@
   }
 
   .page-main__manual {
-    margin: 0 40px;
+    margin: 0 auto;
+    margin-bottom: 57px;
     padding: 0;
     border: none;
   }

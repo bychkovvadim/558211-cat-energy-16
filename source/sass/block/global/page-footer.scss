@@ -17,9 +17,11 @@
 }
 
 .page-footer__container {
+  max-width: $mobile-width;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -46,9 +48,9 @@
 @media (min-width: $tablet-width) {
   .page-footer__container {
     @include clear-indents;
+    max-width: $tablet-width;
     flex-direction: row;
     align-items: center;
-    max-width: 100%;
     padding: 55px 30px;
     padding-top: 85px;
     padding-right: 6px;
@@ -85,6 +87,8 @@
   }
 
   .page-footer__container {
+    max-width: $desktop-width;
+    margin: 0 auto;
     padding: 35px 40px;
     padding-right: 8px;
   }
