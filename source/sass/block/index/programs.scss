@@ -1,3 +1,8 @@
+.programs {
+  display: flex;
+  flex-direction: column;
+}
+
 .programs__item {
   margin-bottom: 19px;
   padding: 31px 21px 19px;
@@ -9,6 +14,7 @@
 
 @media (min-width: $tablet-width) {
   .programs {
+    flex-direction: row;
     width: 100%;
   }
 

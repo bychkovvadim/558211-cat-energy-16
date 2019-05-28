@@ -1,7 +1,6 @@
 body {
   @include clear-indents;
   min-width: 320px;
-  max-width: $desktop-width;
   margin: 0 auto;
   font-family: $desc-font;
   font-size: 14px;
