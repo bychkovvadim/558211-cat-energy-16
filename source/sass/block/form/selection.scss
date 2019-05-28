@@ -1,9 +1,12 @@
 .selection {
-  display: flex;
-  align-self: baseline;
   border: none;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
+}
+
+.selection__wrapper {
+  display: flex;
+  align-self: baseline;
 }
 
 .selection__label {
@@ -57,6 +60,9 @@
 @media (min-width: $tablet-width) {
   .selection {
     border: 1px solid $border-color;
+  }
+
+  .selection__wrapper {
     flex-direction: column;
     flex-wrap: wrap;
   }

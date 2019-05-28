@@ -94,6 +94,10 @@ input[type="radio"]:disabled + label {
   opacity: 0.3;
 }
 
+input[type="number"] {
+  appearance: textfield;
+}
+
 @media (min-width: $tablet-width) {
   .form {
     width: $tablet-width;
