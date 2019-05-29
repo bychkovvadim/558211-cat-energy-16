@@ -39,7 +39,9 @@
     <main class="page-main">
       <section class="page-main__form form">
         <h2 class="form__header">Подбор программы</h2>
-        <p class="form__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <div class="form__desc-wrapper">
+          <p class="form__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        </div>
         <form class="form__main" action="https://echo.htmlacademy.ru" method="GET">
             <div class="form__column">
               <fieldset class="form__main-info form-info">
@@ -70,46 +72,56 @@
               </fieldset>
             </div>
             <fieldset class="form__contact contact">
-              <legend class="contact__legend">Контактные данные (владельца кота)</legend>
-              <div class="contact__row">
-                <label class="contact__label">
-                  <span class="contact__text">E-mail:*</span>
-                  <input class="contact__input contact__input--mail" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required="">
+              <div class="contact__wrapper">
+                <legend class="contact__legend">Контактные данные (владельца кота)</legend>
+                <div class="contact__row">
+                  <label class="contact__label">
+                    <span class="contact__text">E-mail:*</span>
+                    <input class="contact__input contact__input--mail" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required="">
+                  </label>
+                  <label class="contact__label">
+                    <span class="contact__text">Телефон:*</span>
+                    <input class="contact__input contact__input--tel" type="tel" name="tel" id="tel" placeholder="8 (960) 900 60 90" required="">
                 </label>
-                <label class="contact__label">
-                  <span class="contact__text">Телефон:*</span>
-                  <input class="contact__input contact__input--tel" type="tel" name="tel" id="tel" placeholder="8 (960) 900 60 90" required="">
-              </label>
+                </div>
               </div>
             </fieldset>
             <fieldset class="form__comment comment">
-              <legend class="comment__legend">Комментарий</legend>
-              <textarea class="comment__textarea" name="comment" id="comment" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </fieldset>
-            <fieldset class="form__add add">
-              <legend class="add__legend">Дополнительно</legend>
-              <div class="add__wrapper">
-                <div class="add__column">
-                  <input class="visually-hidden add__input" type="checkbox" name="sweetener" id="sweetener" checked="">
-                  <label class="add__label" for="sweetener">Сахарозаменитель</label>
-                </div>
-                <div class="add__column">
-                  <input class="visually-hidden add__input" type="checkbox" name="wather" id="wather">
-                  <label class="add__label" for="wather">Питьевая вода</label>
-                </div>
-                <div class="add__column">
-                  <input class="visually-hidden add__input" type="checkbox" name="milk" id="milk">
-                  <label class="add__label" for="milk">Молоко</label>
-                </div>
-                <div class="add__column">
-                  <input class="visually-hidden add__input" type="checkbox" name="vitamins" id="vitamins">
-                  <label class="add__label" for="vitamins">Витамины</label>
+              <div class="comment__wrapper">
+                <legend class="comment__legend">Комментарий</legend>
+                <div class="comment__textarea-wrapper">
+                  <textarea class="comment__textarea" name="comment" id="comment" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
                 </div>
               </div>
             </fieldset>
-            <div class="form__wrapper">
-              <button class="form__btn" type="submit">Отправить заявку</button>
-              <p class="form__legend">* — Обязательные поля</p>
+            <fieldset class="form__add add">
+              <div class="add__wrapper">
+              <legend class="add__legend">Дополнительно</legend>
+                <div class="add__checkbox-wrapper">
+                  <div class="add__column">
+                    <input class="visually-hidden add__input" type="checkbox" name="sweetener" id="sweetener" checked="">
+                    <label class="add__label" for="sweetener">Сахарозаменитель</label>
+                  </div>
+                  <div class="add__column">
+                    <input class="visually-hidden add__input" type="checkbox" name="wather" id="wather">
+                    <label class="add__label" for="wather">Питьевая вода</label>
+                  </div>
+                  <div class="add__column">
+                    <input class="visually-hidden add__input" type="checkbox" name="milk" id="milk">
+                    <label class="add__label" for="milk">Молоко</label>
+                  </div>
+                  <div class="add__column">
+                    <input class="visually-hidden add__input" type="checkbox" name="vitamins" id="vitamins">
+                    <label class="add__label" for="vitamins">Витамины</label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="form__send">
+              <div class="form__send-inline">
+                <button class="form__btn" type="submit">Отправить заявку</button>
+                <p class="form__legend">* — Обязательные поля</p>
+              </div>
             </div>
         </form>
       </section>

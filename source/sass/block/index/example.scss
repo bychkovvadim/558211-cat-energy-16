@@ -4,9 +4,9 @@
 }
 
 .example__wrapper {
-  max-width: $mobile-width;
   display: flex;
-  margin: 0 20px;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .example__header {
@@ -22,7 +22,6 @@
 
 .example__desc {
   @include clear-indents;
-  max-width: 270px;
   margin-bottom: 24px;
 }
 
@@ -38,7 +37,6 @@
 
   .example__wrapper {
     max-width: $tablet-width;
-    margin: 0 30px;
   }
 
   .example__header {
@@ -73,12 +71,12 @@
   .example__wrapper {
     max-width: $desktop-width;
     flex-direction: row;
-    margin: 0 40px;
   }
 
   .example__column {
     max-width: 37%;
     margin-bottom: 0;
+    padding: 0 40px;
   }
 
   .example__header {

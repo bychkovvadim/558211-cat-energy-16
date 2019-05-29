@@ -1,39 +1,34 @@
 .comment {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   font-family: $header-font;
   color: $header-text;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   border: none;
+
+  &::before {
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 8%;
+    background-color: $main-color;
+  }
+}
+
+.comment__wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .comment__legend {
-  position: relative;
+  max-width: max-content;
+  background-color: $main-background;
   margin-bottom: 32px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: -20px;
-    width: 100vw;
-    height: 3px;
-    background: $main-color;
-    z-index: -1;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    right: -20px;
-    width: 160px;
-    height: 3px;
-    background: #ffffff;
-    z-index: -1;
-  }
 }
 
 .comment__textarea {
@@ -66,15 +61,6 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
-
-    &::before {
-      left: -70px;
-    }
-
-    &::after {
-      width: 258px;
-      right: -39px;
-    }
   }
 
   .comment__textarea {
@@ -86,10 +72,11 @@
 
 @media (min-width: $desktop-width) {
   .comment__legend {
-    width: 14.5%;
+    padding: 0 40px;
+  }
 
-    &::before {
-      left: -40px;
-    }
+  .comment__textarea-wrapper {
+    min-width: 1220px;
+    padding: 0 40px;
   }
 }

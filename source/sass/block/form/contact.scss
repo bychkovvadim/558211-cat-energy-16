@@ -1,39 +1,33 @@
 .contact {
+  width: 100%;
+  position: relative;
   font-family: $header-font;
   color: $header-text;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   border: none;
+
+  &::before {
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 12%;
+    background-color: $main-color;
+  }
+}
+
+.contact__wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .contact__legend {
+  max-width: max-content;
   margin-bottom: 30px;
-  width: 210px;
-  position: relative;
   background-color: $main-background;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: -20px;
-    width: 100vw;
-    height: 3px;
-    background: $main-color;
-    z-index: -1;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: -20px;
-    width: 221px;
-    height: 3px;
-    background: $main-background;
-    z-index: -1;
-  }
 }
 
 .contact__label {
@@ -111,9 +105,8 @@
 
 @media (min-width: $tablet-width) {
   .contact__legend {
-    width: 100%;
-    background-color: transparent;
-    margin-bottom: 72px;
+    width: auto;
+    margin-bottom: 75px;
     font-size: 36px;
     line-height: 36px;
 
@@ -138,15 +131,16 @@
   .contact__input {
     font-size: 20px;
     line-height: 20px;
-    padding: 13px 45px 13px 25px;
+    margin-left: 19px;
+    padding: 10px 60px 10px 20px;
 
     &--mail {
-      background: url("../../../img/icon-mail.svg") no-repeat 97% 53%;
+      background: url("../../../img/icon-mail.svg") no-repeat 96% 53%;
       background-size: 18px 20px;
     }
 
     &--tel {
-      background: url("../../../img/icon-phone.svg") no-repeat 97% 53%;
+      background: url("../../../img/icon-phone.svg") no-repeat 96% 53%;
       background-size: 18px 20px;
     }
 
@@ -167,23 +161,17 @@
 
 @media (min-width: $desktop-width) {
   .contact__row {
-    width: 100%;
-    display: inline-flex;
+    display: flex;
+    padding: 0 40px;
   }
 
   .contact__label {
-    width: 568px;
-
     &:first-child {
       padding-right: 78px;
     }
   }
 
   .contact__legend {
-    width: 43%;
-
-    &::before {
-      left: -40px;
-    }
+    padding: 0 40px;
   }
 }

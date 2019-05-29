@@ -5,6 +5,9 @@
 
 .form__header {
   @include clear-indents;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
   margin-top: 17px;
   margin-bottom: 25px;
   font-family: $header-font;
@@ -16,6 +19,9 @@
 
 .form__desc {
   @include clear-indents;
+  max-width: 1300px;
+  width: 334px;
+  margin: 0 auto;
   margin-right: 40px;
   margin-bottom: 39px;
   font-family: $header-font;
@@ -36,6 +42,11 @@
   margin: 0 -20px;
   margin-bottom: 31px;
   padding: 26px 19px;
+}
+
+.form__column {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .form__contact {
@@ -108,15 +119,20 @@ input[type="number"] {
   .form__header {
     font-size: 60px;
     line-height: 60px;
-    margin: 0;
+    margin: 0 auto;
     margin-left: -40px;
     margin-bottom: 56px;
+  }
+
+  .form__desc-wrapper {
+    min-width: 768px;
+    margin: 0 auto;
+    padding: 0 30px;
   }
 
   .form__desc {
     font-size: 20px;
     line-height: 30px;
-    margin-right: 45%;
     margin-bottom: 65px;
   }
 
@@ -124,8 +140,13 @@ input[type="number"] {
     width: 100%;
   }
 
-  .form__wrapper {
-    width: 89%;
+  .form__send {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .form__send-inline {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -174,12 +195,21 @@ input[type="number"] {
   }
 
   .form__header {
-    margin-left: 0;
+    max-width: 1220px;
+    margin: 0 auto;
     margin-top: 18px;
+    margin-bottom: 57px;
+  }
+
+  .form__desc-wrapper {
+    min-width: 1300px;
+    padding: 0;
+    margin-bottom: 65px;
   }
 
   .form__desc {
-    margin-right: 70%;
+    @include clear-indents;
+    padding: 0 40px;
   }
 
   .form__main {
@@ -187,13 +217,16 @@ input[type="number"] {
   }
 
   .form__column {
+    max-width: 1220px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 40px;
   }
 
   .form__main-info {
     width: 569px;
-    margin-bottom: 46px;
+    margin-bottom: 47px;
   }
 
   .form__selection {
@@ -201,13 +234,7 @@ input[type="number"] {
   }
 
   .form__contact {
-    margin-bottom: 51px;
-  }
-
-  .form__wrapper {
-    width: 100%;
-    justify-content: flex-start;
-    margin-bottom: 80px;
+    margin-bottom: 55px;
   }
 
   .form__btn {

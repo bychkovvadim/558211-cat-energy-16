@@ -1,16 +1,29 @@
 .add {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  position: relative;
   font-family: $header-font;
   color: $header-text;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   border: none;
+
+  &::before {
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 12%;
+    background-color: $main-color;
+  }
 }
 
 .add__wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.add__checkbox-wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -21,30 +34,9 @@
 }
 
 .add__legend {
+  max-width: max-content;
   margin-bottom: 32px;
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: -20px;
-    width: 100vw;
-    height: 3px;
-    background: $main-color;
-    z-index: -1;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    right: -20px;
-    width: 181px;
-    height: 3px;
-    background: #ffffff;
-    z-index: -1;
-  }
+  background-color: $main-background;
 }
 
 .add__label {
@@ -94,11 +86,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .add {
-    flex-direction: row;
-  }
-
-  .add__wrapper {
+  .add__checkbox-wrapper {
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
@@ -114,20 +102,11 @@
     margin-bottom: 63px;
     font-size: 36px;
     line-height: 36px;
-
-    &::before {
-      left: -70px;
-    }
-
-    &::after {
-      right: -40px;
-      width: 290px;
-    }
   }
 
   .add__label {
     margin-bottom: 32px;
-    padding-left: 62px;
+    padding-left: 60px;
     font-size: 20px;
     line-height: 20px;
 
@@ -143,8 +122,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .add {
-    flex-direction: column;
+  .add__checkbox-wrapper {
+    margin: 0 40px;
   }
 
   .add__column {
@@ -153,10 +132,6 @@
   }
 
   .add__legend {
-    width: 17.1%;
-
-    &::before {
-      left: -40px;
-    }
+    padding: 0 40px;
   }
 }

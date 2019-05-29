@@ -1,3 +1,7 @@
+.manual {
+  padding: 0 30px;
+}
+
 .manual__list {
   @include clear-list;
   display: flex;
@@ -47,7 +51,7 @@
 
 @media (min-width: $tablet-width) {
   .manual {
-    width: 100%;
+    padding: 0 30px;
   }
 
   .manual__list {
@@ -55,13 +59,12 @@
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     counter-reset: list;
-    margin-bottom: -33px;
   }
 
   .manual__item {
-    max-width: 250px;
+    max-width: 245px;
     min-height: 170px;
     display: block;
     flex-direction: column;
@@ -72,14 +75,10 @@
     font-size: 16px;
     line-height: 24px;
 
-    &:nth-child(even) {
-      margin-right: 0;
-    }
-
     &::after {
       position: absolute;
       top: -20%;
-      right: 5%;
+      right: 0;
       counter-increment: list;
       content: "" counter(list);
       z-index: -1;
@@ -87,6 +86,10 @@
       line-height: 1;
       color: $alt-background;
       font-family: $header-font;
+    }
+
+    &--leaf::after {
+      right: 16px;
     }
   }
 
@@ -106,8 +109,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .manual__list {
-    margin-bottom: 0;
+  .manual {
+    padding: 0 40px;
   }
 
   .manual__header {
@@ -115,16 +118,7 @@
   }
 
   .manual__item {
-    flex: 0 0 25%;
-    margin-right: 70px;
+    margin-right: 0;
     margin-bottom: 55px;
-
-    &:nth-child(even) {
-      margin-right: 75px;
-    }
-
-    &:nth-child(4n+4) {
-      margin-right: 0;
-    }
   }
 }
