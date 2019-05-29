@@ -30,6 +30,10 @@
   background-color: $main-background;
 }
 
+.contact__row {
+  padding: 0 20px;
+}
+
 .contact__label {
   display: flex;
   justify-content: space-between;
@@ -107,6 +111,7 @@
   .contact__legend {
     width: auto;
     margin-bottom: 75px;
+    padding: 0 30px;
     font-size: 36px;
     line-height: 36px;
 
@@ -120,6 +125,10 @@
       left: -39px;
       width: 590px;
     }
+  }
+
+  .contact__row {
+    padding: 0 70px;
   }
 
   .contact__label {

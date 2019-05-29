@@ -6,7 +6,6 @@
 .form__header {
   @include clear-indents;
   width: 100%;
-  max-width: 1300px;
   margin: 0 auto;
   margin-top: 17px;
   margin-bottom: 25px;
@@ -19,7 +18,6 @@
 
 .form__desc {
   @include clear-indents;
-  max-width: 1300px;
   width: 334px;
   margin: 0 auto;
   margin-right: 40px;
@@ -117,20 +115,20 @@ input[type="number"] {
   }
 
   .form__header {
+    max-width: 708px;
     font-size: 60px;
     line-height: 60px;
-    margin: 0 auto;
-    margin-left: -40px;
     margin-bottom: 56px;
   }
 
   .form__desc-wrapper {
     min-width: 768px;
-    margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 70px;
   }
 
   .form__desc {
+    @include clear-indents;
+    padding: 0 70px;
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 65px;
@@ -155,13 +153,12 @@ input[type="number"] {
 
   .form__main-info {
     margin-bottom: 50px;
+    padding: 0 70px;
   }
 
   .form__selection {
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 auto;
     margin-bottom: 76px;
-    padding: 35px 25px;
   }
 
   .form__contact {

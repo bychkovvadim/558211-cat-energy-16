@@ -59,6 +59,9 @@
 
 @media (min-width: $tablet-width) {
   .selection {
+    max-width: 628px;
+    box-sizing: border-box;
+    padding: 35px 25px;
     border: 1px solid $border-color;
   }
 

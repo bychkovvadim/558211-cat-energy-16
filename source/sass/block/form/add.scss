@@ -90,6 +90,7 @@
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
+    padding: 0 70px;
   }
 
   .add__column {
@@ -98,8 +99,9 @@
     padding-right: 45px;
   }
 
-  .add__legend {
+  .add__legend {    
     margin-bottom: 63px;
+    padding: 0 30px;
     font-size: 36px;
     line-height: 36px;
   }
