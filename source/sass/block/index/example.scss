@@ -4,6 +4,7 @@
 }
 
 .example__wrapper {
+  max-width: $mobile-width;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -22,7 +23,12 @@
 
 .example__desc {
   @include clear-indents;
+  max-width: 275px;
   margin-bottom: 24px;
+}
+
+.example__column {
+  padding: 0 20px;
 }
 
 .example__progress {
@@ -56,6 +62,7 @@
 
   .example__column {
     margin-bottom: 31px;
+    padding: 0 30px;
   }
 
   .example__progress {

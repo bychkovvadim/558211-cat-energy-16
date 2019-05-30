@@ -1,3 +1,19 @@
+.collaboration {
+  &--background-toggle {
+    background-color: $main-background;
+  }
+}
+
+.collaboration__wrapper {
+  max-width: $mobile-width;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 29px 20px 25px 20px;
+  box-sizing: border-box;
+}
+
 .collaboration__description {
   @include clear-indents;
   width: 50%;
@@ -18,6 +34,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .collaboration__wrapper {
+    max-width: $tablet-width;
+    padding: 65px 70px;
+  }
+
   .collaboration__description {
     font-size: 20px;
     line-height: 25px;
@@ -36,6 +57,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .collaboration__wrapper {
+    position: absolute;
+    top: 95px;
+    right: 50%;
+    width: 570px;
+    margin-right: 40px;
+    padding: 65px 85px 61px 74px;
+    z-index: 1;
+    background-color: $main-background;
+  }
+
   .collaboration__address {
     text-align: start;
 

@@ -17,6 +17,7 @@
   width: 40px;
   height: 40px;
   fill: #666666;
+  margin-right: -7px;
 
   &:hover {
     fill: $main-color;
@@ -53,6 +54,10 @@
 
   .copyright__desc {
     margin-right: 12px;
+  }
+
+  .copyright__logo-dev {
+    margin-right: 0;
   }
 
   .copyright__link {

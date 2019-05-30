@@ -1,11 +1,10 @@
 .page-main__promo {
-  margin: 0 20px;
-  margin-bottom: 21px;
+  margin-bottom: 197px;
 }
 
 .page-main__programs {
   margin: 0 auto;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 
 .page-main__manual {
@@ -22,17 +21,15 @@
   }
 
   .page-main__promo {
-    position: relative;
-    align-items: flex-start;
-    margin: 0 30px;
-    padding-right: 20%;
-    padding-left: 90px;
-    padding-bottom: 529px;
+    padding-bottom: 506px;
+    margin-bottom: 0;
+    z-index: 1;
   }
 
   .page-main__programs {
     flex-direction: column;
     flex-wrap: wrap;
+    margin-bottom: 18px;
   }
 
   .page-main__manual {
@@ -47,11 +44,8 @@
   }
 
   .page-main__promo {
-    position: static;
     margin-top: 53px;
     margin-bottom: 268px;
-    margin-right: 55.5%;
-    margin-left: 9.2%;
     padding: 0;
   }
 

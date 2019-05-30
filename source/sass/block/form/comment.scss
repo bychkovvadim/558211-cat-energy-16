@@ -15,13 +15,14 @@
     width: 100%;
     height: 3px;
     position: absolute;
-    top: 8%;
+    top: 6%;
+    left: 0;
     background-color: $main-color;
   }
 }
 
 .comment__wrapper {
-  max-width: 1300px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -29,6 +30,11 @@
   max-width: max-content;
   background-color: $main-background;
   margin-bottom: 32px;
+  padding: 0 20px;
+}
+
+.comment__textarea-wrapper {
+  min-width: 280px;
   padding: 0 20px;
 }
 
@@ -42,6 +48,7 @@
   color: $desc-text;
   border: 1px solid $border-color;
   box-sizing: border-box;
+  overflow-x: hidden;
 
   &::placeholder {
     color: $desc-text;
@@ -58,11 +65,27 @@
 }
 
 @media (min-width: $tablet-width) {
+  .comment {
+    &::before {
+      top: 7%;
+    }
+  }
+
+  .comment__wrapper {
+    max-width: 768px;
+  }
+
   .comment__legend {
     font-size: 36px;
     line-height: 36px;
+    margin-left: 32px;
     margin-bottom: 76px;
-    padding: 0 30px;
+    padding: 0 39px;
+  }
+
+  .comment__textarea-wrapper {
+    min-width: 628px;
+    padding: 0 70px;
   }
 
   .comment__textarea {
@@ -73,7 +96,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .comment__wrapper {
+    max-width: 1300px;
+  }
+
   .comment__legend {
+    margin-left: 0;
     padding: 0 40px;
   }
 

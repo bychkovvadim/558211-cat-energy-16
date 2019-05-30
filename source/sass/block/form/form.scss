@@ -5,10 +5,10 @@
 
 .form__header {
   @include clear-indents;
-  width: 100%;
+  width: 280px;
   margin: 0 auto;
-  margin-top: 17px;
-  margin-bottom: 25px;
+  margin-top: 16px;
+  margin-bottom: 24px;
   font-family: $header-font;
   color: $header-text;
   font-weight: 400;
@@ -16,9 +16,14 @@
   line-height: 60px;
 }
 
+.form__desc-wrapper {
+  max-width: 320px;
+  width: 280px;
+  margin: 0 auto;
+}
+
 .form__desc {
   @include clear-indents;
-  width: 334px;
   margin: 0 auto;
   margin-right: 40px;
   margin-bottom: 39px;
@@ -32,34 +37,40 @@
 
 .form__main-info {
   @include clear-indents;
+  padding: 0 20px;
   margin-bottom: 9px;
 }
 
 .form__selection {
   @include clear-indents;
-  margin: 0 -20px;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
   padding: 26px 19px;
 }
 
 .form__column {
-  max-width: 1300px;
+  max-width: 320px;
   margin: 0 auto;
+}
+
+.form__send {
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .form__contact {
   @include clear-indents;
-  margin-bottom: 13px;
+  margin-bottom: 16px;
 }
 
 .form__comment {
   @include clear-indents;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .form__add {
   @include clear-indents;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .form__btn {
@@ -109,25 +120,27 @@ input[type="number"] {
 
 @media (min-width: $tablet-width) {
   .form {
-    width: $tablet-width;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .form__header {
     max-width: 708px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 56px;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 56px;
   }
 
   .form__desc-wrapper {
-    min-width: 768px;
-    padding: 0 70px;
+    max-width: 768px;
+    width: 100%;
   }
 
   .form__desc {
     @include clear-indents;
+    width: 350px;
     padding: 0 70px;
     font-size: 20px;
     line-height: 30px;
@@ -138,10 +151,13 @@ input[type="number"] {
     width: 100%;
   }
 
+  .form__column {
+    max-width: 628px;
+  }
+
   .form__send {
-    max-width: 1220px;
-    margin: 0 auto;
-    padding: 0 40px;
+    max-width: 628px;
+    padding: 0 70px;
   }
 
   .form__send-inline {
@@ -152,8 +168,8 @@ input[type="number"] {
   }
 
   .form__main-info {
+    padding: 0;
     margin-bottom: 50px;
-    padding: 0 70px;
   }
 
   .form__selection {
@@ -166,20 +182,23 @@ input[type="number"] {
   }
 
   .form__comment {
-    margin-bottom: 66px;
+    margin-bottom: 64px;
   }
 
   .form__add {
-    margin-bottom: 9px;
+    margin-bottom: 11px;
   }
 
   .form__btn {
+    width: 283px;
     margin-bottom: 0;
     padding: 17px 7px;
     font-size: 20px;
   }
 
   .form__legend {
+    width: 250px;
+    margin-left: 27px;
     margin-bottom: 0;
     font-size: 16px;
     line-height: 16px;
@@ -187,10 +206,6 @@ input[type="number"] {
 }
 
 @media (min-width: $desktop-width) {
-  .form {
-    width: 100%;
-  }
-
   .form__header {
     max-width: 1220px;
     margin: 0 auto;
@@ -206,6 +221,7 @@ input[type="number"] {
 
   .form__desc {
     @include clear-indents;
+    max-width: 768px;
     padding: 0 40px;
   }
 
@@ -221,6 +237,15 @@ input[type="number"] {
     padding: 0 40px;
   }
 
+  .form__send {
+    max-width: 1220px;
+    padding: 0 40px;
+  }
+
+  .form__send-inline {
+    margin-bottom: 80px;
+  }
+
   .form__main-info {
     width: 569px;
     margin-bottom: 47px;
@@ -231,7 +256,7 @@ input[type="number"] {
   }
 
   .form__contact {
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   .form__btn {
@@ -239,7 +264,6 @@ input[type="number"] {
   }
 
   .form__legend {
-    width: 250px;
     margin-left: 47px;
   }
 }

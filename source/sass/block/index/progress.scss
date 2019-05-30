@@ -75,7 +75,8 @@
     }
 
     &:active {
-      border-bottom: none;
+      border-bottom: 1px solid transparent;
+      outline: none;
     }
   }
 }

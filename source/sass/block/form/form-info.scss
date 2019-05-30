@@ -31,6 +31,8 @@
   font-weight: 400;
   color: $desc-text;
   border: 1px solid $border-color;
+  overflow: auto;
+  height: 18px;
 
   &::placeholder {
     color: $desc-text;
@@ -59,8 +61,18 @@
 
   .form-info__input {
     margin-left: 20px;
-    padding: 10px 17px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 20px;
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-info__input {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 20px;
   }
 }

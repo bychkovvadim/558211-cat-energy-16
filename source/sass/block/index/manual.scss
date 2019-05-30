@@ -1,5 +1,5 @@
 .manual {
-  padding: 0 30px;
+  padding: 0 20px;
 }
 
 .manual__list {
@@ -51,16 +51,17 @@
 
 @media (min-width: $tablet-width) {
   .manual {
+    width: 708px;
     padding: 0 30px;
   }
 
   .manual__list {
     @include clear-list;
-    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     counter-reset: list;
+    margin-bottom: -32px;
   }
 
   .manual__item {
@@ -71,13 +72,13 @@
     align-items: flex-start;
     position: relative;
     margin-bottom: 133px;
-    margin-right: 133px;
+    margin-right: 78px;
     font-size: 16px;
     line-height: 24px;
 
     &::after {
       position: absolute;
-      top: -20%;
+      top: -30px;
       right: 0;
       counter-increment: list;
       content: "" counter(list);
@@ -103,13 +104,14 @@
     @include clear-indents;
     font-size: 60px;
     line-height: 60px;
-    padding-top: 47px;
+    padding-top: 29px;
     margin-bottom: 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .manual {
+    width: 1220px;
     padding: 0 40px;
   }
 
@@ -120,5 +122,9 @@
   .manual__item {
     margin-right: 0;
     margin-bottom: 55px;
+  }
+
+  .manual__list {
+    margin-bottom: 0;
   }
 }

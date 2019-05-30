@@ -14,19 +14,24 @@
 
 @media (min-width: $tablet-width) {
   .programs {
+    width: $tablet-width;
     flex-direction: row;
-    width: 100%;
   }
 
   .programs__item {
-    width: 100%;
+    width: 708px;
     flex-wrap: wrap;
-    padding: 77px 281px 60px 52px;
+    margin: 0 30px;
     margin-bottom: 30px;
+    padding: 77px 281px 60px 52px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .programs {
+    width: $desktop-width;
+  }
+
   .programs__item {
     width: 460px;
     margin: 0 40px;

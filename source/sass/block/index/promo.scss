@@ -1,18 +1,22 @@
-.promo__background {
+.promo {
   width: 100%;
   height: 305px;
-  margin: 0 -20px;
-  position: absolute;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-color: $main-color;
   background-repeat: no-repeat;
-  background-position: top;
   background-size: cover;
-  z-index: -1;
+  background-position: center 0;
+  position: relative;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
   }
+}
+
+.promo__container {
+  max-width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .promo__header {
@@ -51,14 +55,29 @@
 }
 
 @media (min-width: $tablet-width) {
-  .promo__background {
-    display: none;
+  .promo {
+    background-image: none;
+    background-color: $main-background;
+  }
+
+  .promo__wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .promo__container {
+    max-width: 768px;
+    width: 450px;
+    margin: 0 30px;
+    padding-right: 90px;
+    padding-left: 90px;
   }
 
   .promo__image {
     position: absolute;
     bottom: 0;
     right: 0;
+    left: 4px;
     width: 709px;
     height: 609px;
     z-index: -1;
@@ -91,6 +110,17 @@
 
 @media (min-width: $desktop-width) {
   .promo {
+    height: 285px;
+    background: transparent;
+  }
+
+  .promo__wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .promo__container {
+    width: 450px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -98,8 +128,9 @@
   }
 
   .promo__image {
-    top: -29px;
-    left: 231px;
+    top: -82px;
+    left: 230px;
+    right: 0;
     width: 552px;
     height: 499px;
     z-index: 0;
@@ -107,19 +138,6 @@
 
   .promo__header {
     width: 100%;
-  }
-
-  .promo__background {
-    display: block;
-    top: -170px;
-    right: 20px;
-    width: 50%;
-    min-height: 696px;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/index-background-desktop@2x.jpg");
-    }
   }
 
   .promo__desc {

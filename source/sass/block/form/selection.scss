@@ -7,6 +7,8 @@
 .selection__wrapper {
   display: flex;
   align-self: baseline;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .selection__label {
@@ -65,11 +67,6 @@
     border: 1px solid $border-color;
   }
 
-  .selection__wrapper {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
   .selection__label {
     padding-left: 62px;
     margin-bottom: 32px;
@@ -91,6 +88,7 @@
 
 @media (min-width: $desktop-width) {
   .selection {
-    width: 518px;
+    width: 570px;
+    margin: 0;
   }
 }

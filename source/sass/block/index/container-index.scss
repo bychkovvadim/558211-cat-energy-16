@@ -1,3 +1,17 @@
 .container-index {
-  max-width: $desktop-width;
+  max-width: $mobile-width;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container-index {
+    max-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container-index {
+    max-width: $desktop-width;
+    margin: 0;
+  }
 }

@@ -63,11 +63,11 @@
                 <div class="selection__wrapper">
                   <legend class="visually-hidden">Выбор программы</legend>
                   <input class="visually-hidden selection__input" type="radio" name="selection" id="slim" value="slim" checked="">
-                  <label class="selection__label" for="slim">Похудение</label>
+                  <label class="selection__label" for="slim" tabindex="0">Похудение</label>
                   <input class="visually-hidden selection__input" type="radio" name="selection" id="power" value="power">
-                  <label class="selection__label" for="power">Набор массы</label>
+                  <label class="selection__label" for="power" tabindex="0">Набор массы</label>
                   <input class="visually-hidden selection__input" type="radio" name="selection" id="consultation" value="consultation">
-                  <label class="selection__label" for="consultation">Не знаю (нужен ваш совет)</label>
+                  <label class="selection__label" for="consultation" tabindex="0">Не знаю (нужен ваш совет)</label>
                 </div>
               </fieldset>
             </div>
@@ -81,7 +81,7 @@
                   </label>
                   <label class="contact__label">
                     <span class="contact__text">Телефон:*</span>
-                    <input class="contact__input contact__input--tel" type="tel" name="tel" id="tel" placeholder="8 (960) 900 60 90" required="">
+                    <input class="contact__input contact__input--tel" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required="">
                 </label>
                 </div>
               </div>
@@ -99,20 +99,20 @@
               <legend class="add__legend">Дополнительно</legend>
                 <div class="add__checkbox-wrapper">
                   <div class="add__column">
-                    <input class="visually-hidden add__input" type="checkbox" name="sweetener" id="sweetener" checked="">
-                    <label class="add__label" for="sweetener">Сахарозаменитель</label>
+                    <input class="visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
+                    <label class="add__label" for="sweetener" tabindex="0">Сахарозаменитель</label>
                   </div>
                   <div class="add__column">
-                    <input class="visually-hidden add__input" type="checkbox" name="wather" id="wather">
-                    <label class="add__label" for="wather">Питьевая вода</label>
+                    <input class="visually-hidden" type="checkbox" name="wather" id="wather">
+                    <label class="add__label" for="wather" tabindex="0">Питьевая вода</label>
                   </div>
                   <div class="add__column">
-                    <input class="visually-hidden add__input" type="checkbox" name="milk" id="milk">
-                    <label class="add__label" for="milk">Молоко</label>
+                    <input class="visually-hidden" type="checkbox" name="milk" id="milk">
+                    <label class="add__label" for="milk" tabindex="0">Молоко</label>
                   </div>
                   <div class="add__column">
-                    <input class="visually-hidden add__input" type="checkbox" name="vitamins" id="vitamins">
-                    <label class="add__label" for="vitamins">Витамины</label>
+                    <input class="visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+                    <label class="add__label" for="vitamins" tabindex="0">Витамины</label>
                   </div>
                 </div>
               </div>
@@ -128,9 +128,11 @@
     </main>
     <footer class="page-footer">
       <section class="page-footer__collaboration collaboration">
-        <h2 class="visually-hidden">Сотрудничество с нами</h2>
-        <p class="collaboration__description">приглашаем <br>к сотрудничеству дилеров!</p>
-        <address class="collaboration__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+        <div class="collaboration__wrapper">
+          <h2 class="visually-hidden">Сотрудничество с нами</h2>
+          <p class="collaboration__description">приглашаем <br>к сотрудничеству дилеров!</p>
+          <address class="collaboration__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+        </div>
       </section>
       <section class="map page-footer__map">
         <h2 class="visually-hidden">Где мы находимся</h2>
